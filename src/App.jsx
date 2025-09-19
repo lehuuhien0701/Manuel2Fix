@@ -82,17 +82,17 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                 
                   <div className="flex items-center justify-center mb-10 sm:mb-22">
                     <img src="/v2-logo.png" alt="Manuel2Fix Logo" className="h-[42px] w-[39px] sm:h-16 sm:w-16 mb-2" />
-                    <h1 className="font-jakarta font-extrabold text-[12px] leading-[18px] sm:text-[21.95px] sm:leading-8 text-secondary ml-4">Manuel2Fix</h1>
+                    <h1 className="font-jakarta font-extrabold text-[12px] leading-[18px] sm:text-[21.95px] sm:leading-8 text-charcoal ml-4">Manuel2Fix</h1>
                   </div>
                   
                 
-                  <h2 className="font-poppins font-semibold text-[40px] leading-[45px] md:text-[65px] md:leading-[78px] text-center text-secondary mb-12">Login</h2>
+                  <h2 className="font-poppins font-semibold text-[40px] leading-[45px] md:text-[65px] md:leading-[78px] text-center text-charcoal mb-12">Login</h2>
                   
               
                   <form> 
                   
                     <div className="mb-8">
-                      <label htmlFor="email" className="block font-poppins font-medium text-base text-secondary mb-1">Email</label>
+                      <label htmlFor="email" className="block font-poppins font-medium text-base text-charcoal mb-1">Email</label>
                       <input 
                         type="email" 
                         id="email" 
@@ -103,7 +103,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                     
                     
                     <div className="mb-1">
-                      <label htmlFor="password" className="block font-poppins font-medium text-base text-secondary mb-1">Password</label>
+                      <label htmlFor="password" className="block font-poppins font-medium text-base text-charcoal mb-1">Password</label>
                       <input 
                         type="password" 
                         id="password" 
@@ -118,10 +118,10 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                     </div>
                     
                     <div className="mt-8 sm:mt-0 flex-col sm:flex-row flex items-center"> 
-                        <button type="submit" className="w-full sm:w-auto bg-primary hover:bg-secondary text-white font-semibold text-[16px] py-3 px-7 rounded-[6px]"> 
+                        <button type="submit" className="w-full sm:w-auto bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-7 rounded-[6px]"> 
                           Login
                         </button> 
-                        <div className="ml-0 sm:ml-8 mt-4 sm:mt-0 text-center font-poppins font-medium text-base text-secondary">
+                        <div className="ml-0 sm:ml-8 mt-4 sm:mt-0 text-center font-poppins font-medium text-base text-charcoal">
                           <span>Don't have an account? </span>
                           <a href="#" className="text-primary hover:underline">Sign up</a>
                         </div>
@@ -152,16 +152,16 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                 
                     <div className="flex items-center justify-center mb-10 sm:mb-22">
                     <img src="/v2-logo.png" alt="Manuel2Fix Logo" className="h-[42px] w-[39px] sm:h-16 sm:w-16 mb-2" />
-                    <h1 className="font-jakarta font-extrabold text-[12px] leading-[18px] sm:text-[21.95px] sm:leading-8 text-secondary ml-4">Manuel2Fix</h1>
+                    <h1 className="font-jakarta font-extrabold text-[12px] leading-[18px] sm:text-[21.95px] sm:leading-8 text-charcoal ml-4">Manuel2Fix</h1>
                     </div>
                     
                 
-                    <h2 className="font-poppins font-semibold text-[40px] leading-[45px] md:text-[65px] md:leading-[78px] text-center text-secondary mb-12">Sign up</h2>
+                    <h2 className="font-poppins font-semibold text-[40px] leading-[45px] md:text-[65px] md:leading-[78px] text-center text-charcoal mb-12">Sign up</h2>
                     
                 
                     <form> 
                     <div className="mb-8">
-                        <label htmlFor="email" className="block font-poppins font-medium text-base text-secondary mb-1">First name</label>
+                        <label htmlFor="fname" className="block font-poppins font-medium text-base text-charcoal mb-1">First name</label>
                         <input 
                         type="text" 
                         id="fname" 
@@ -171,7 +171,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                     </div>
 
                     <div className="mb-8">
-                        <label htmlFor="email" className="block font-poppins font-medium text-base text-secondary mb-1">Last name</label>
+                        <label htmlFor="lname" className="block font-poppins font-medium text-base text-charcoal mb-1">Last name</label>
                         <input 
                         type="text" 
                         id="lname" 
@@ -181,7 +181,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                     </div>
 
                     <div className="mb-8">
-                        <label htmlFor="email" className="block font-poppins font-medium text-base text-secondary mb-1">Email</label>
+                        <label htmlFor="email" className="block font-poppins font-medium text-base text-charcoal mb-1">Email</label>
                         <input 
                         type="email" 
                         id="email" 
@@ -192,7 +192,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                     
                     
                     <div className="mb-1">
-                        <label htmlFor="password" className="block font-poppins font-medium text-base text-secondary mb-1">Password</label>
+                        <label htmlFor="password" className="block font-poppins font-medium text-base text-charcoal mb-1">Password</label>
                         <input 
                         type="password" 
                         id="password" 
@@ -207,10 +207,10 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                     </div>
                     
                     <div className="mt-8 sm:mt-0 flex-col sm:flex-row flex items-center"> 
-                        <button type="submit" className="w-full sm:w-auto bg-primary hover:bg-secondary text-white font-semibold text-[16px] py-3 px-7 rounded-[6px]"> 
+                        <button type="submit" className="w-full sm:w-auto bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-7 rounded-[6px]"> 
                             Sign up
                         </button> 
-                        <div className="ml-0 sm:ml-8 mt-4 sm:mt-0 text-center font-poppins font-medium text-base text-secondary">
+                        <div className="ml-0 sm:ml-8 mt-4 sm:mt-0 text-center font-poppins font-medium text-base text-charcoal">
                             <span>Already have an account? </span>
                             <a href="#" className="text-primary hover:underline">Login</a>
                         </div>
@@ -247,7 +247,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                 </div>
                 <div className="relative z-10 flex items-center justify-center mb-20 sm:mb-25">
                     <img src="/v2-logo.png" alt="Manuel2Fix Logo" className="h-[42px] w-[39px] sm:h-16 sm:w-16 mb-2" />
-                    <h1 className="font-jakarta font-extrabold text-[12px] leading-[18px] sm:text-[21.95px] sm:leading-8 text-secondary ml-4">Manuel2Fix</h1>
+                    <h1 className="font-jakarta font-extrabold text-[12px] leading-[18px] sm:text-[21.95px] sm:leading-8 text-charcoal ml-4">Manuel2Fix</h1>
                   </div>
                 <div 
                   className="relative pb-14 md:pb-16 bg-custom-blue" 
@@ -256,7 +256,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                   
                   <div className="container mx-auto relative z-10">
                     <div className="flex flex-col items-center justify-center">
-                      <h2 className="font-poppins font-semibold text-[40px] leading-[45px] md:text-[65px] md:leading-[78px] text-center text-secondary mt-[-30px]">Sign up</h2>   
+                      <h2 className="font-poppins font-semibold text-[40px] leading-[45px] md:text-[65px] md:leading-[78px] text-center text-charcoal mt-[-30px]">Sign up</h2>   
                     </div>
                   </div>
                 </div>
@@ -269,24 +269,24 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="px-11 py-5 flex items-center justify-center min-h-52 group bg-white border border-[#EEEEEE] shadow-[0px_14px_22px_rgba(0,0,0,0.07)] rounded-xl">
                           <div className="w-full flex flex-col items-center text-center">
-                          <span className="font-semibold text-[22px] leading-8 text-secondary group-hover:text-primary">Create an account as 
-          a provider</span>
-                          <button className="w-full sm:w-auto mt-4 bg-primary hover:bg-secondary text-white font-semibold text-[16px] py-3 px-9 rounded-[6px]">Create account</button>
+                          <span className="font-semibold text-[22px] leading-8 text-charcoal group-hover:text-primary">Create an account as 
+                       a provider</span>
+                          <button className="w-full sm:w-auto mt-4 bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-9 rounded-[6px]">Create account</button>
                           </div>
                         </div>
 
                         <div className="px-11 py-5 flex items-center justify-center min-h-52 group bg-white border border-[#EEEEEE] shadow-[0px_14px_22px_rgba(0,0,0,0.07)] rounded-xl">
                           <div className="w-full flex flex-col items-center text-center">
-                          <span className="font-semibold text-[22px] leading-8 text-secondary group-hover:text-primary">Create an account as 
-          a client</span>
-                          <button className="w-full sm:w-auto mt-4 bg-primary hover:bg-secondary text-white font-semibold text-[16px] py-3 px-9 rounded-[6px]">Create account</button>
+                          <span className="font-semibold text-[22px] leading-8 text-charcoal group-hover:text-primary">Create an account as 
+                             a client</span>
+                          <button className="w-full sm:w-auto mt-4 bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-9 rounded-[6px]">Create account</button>
                           </div>
                         </div>
 
                         <div className="px-11 py-5 flex items-center justify-center min-h-52 group bg-white border border-[#EEEEEE] shadow-[0px_14px_22px_rgba(0,0,0,0.07)] rounded-xl">
                           <div className="w-full flex flex-col items-center text-center">
-                          <span className="font-semibold text-[22px] leading-8 text-secondary group-hover:text-primary">Access an existing account (client or provider)</span>
-                          <button className="w-full sm:w-auto mt-4 bg-primary hover:bg-secondary text-white font-semibold text-[16px] py-3 px-9 rounded-[6px]">Login</button>
+                          <span className="font-semibold text-[22px] leading-8 text-charcoal group-hover:text-primary">Access an existing account (client or provider)</span>
+                          <button className="w-full sm:w-auto mt-4 bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-9 rounded-[6px]">Login</button>
                           </div>
                         </div>
                       </div>
@@ -296,7 +296,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                     <div className="bg-white pb-32">
                         <div className="mx-auto block md:flex items-center">
                         
-                          <h2 className="text-center md:text-left mb-6 md:mb-0 font-poppins font-semibold text-[22px] leading-8 text-secondary md:mr-10">Partners:</h2>
+                          <h2 className="text-center md:text-left mb-6 md:mb-0 font-poppins font-semibold text-[22px] leading-8 text-charcoal md:mr-10">Partners:</h2>
 
                       
                           <div className="flex-grow overflow-x-auto">
@@ -362,8 +362,8 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
               
               <section className="pt-20 pb-15 sm:py-20 bg-white relative overflow-hidden">
                 <div className="container mx-auto text-center relative z-10">
-                  <h2 className="font-poppins font-semibold text-[40px] leading-[45px] md:text-[65px] md:leading-[78px] text-center text-secondary mb-4 sm:mb-8">Activity overview</h2> 
-                  <button className="w-full sm:w-auto bg-primary hover:bg-secondary text-white font-semibold text-[16px] py-3 px-9 rounded-[6px]"> 
+                  <h2 className="font-poppins font-semibold text-[40px] leading-[45px] md:text-[65px] md:leading-[78px] text-center text-charcoal mb-4 sm:mb-8">Activity overview</h2> 
+                  <button className="w-full sm:w-auto bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-9 rounded-[6px]"> 
                     Request a service
                   </button>
                 </div>
@@ -392,7 +392,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                 
                 <div className="bg-[#F2F7F8]">
                   <div className="container mx-auto">
-                    <h2 className="font-semibold text-[40px] leading-[50px] text-secondary text-center mb-10">Providers</h2>   
+                    <h2 className="font-semibold text-[40px] leading-[50px] text-charcoal text-center mb-10">Providers</h2>   
                   </div>  
                   <div className="container mx-auto">
                     <div className="flex-grow overflow-x-auto"> 
@@ -445,7 +445,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                             </div>
             
                             <button className="flex items-center justify-center mt-2text-custom-blue w-full">
-                              <span className="font-semibold text-xl leading-relaxed text-center text-secondary">Gardening</span>                     
+                              <span className="font-semibold text-xl leading-relaxed text-center text-charcoal">Gardening</span>                     
                             </button>
                           </div>
                         </div>
@@ -465,7 +465,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                             </div>
             
                             <button className="flex items-center justify-center mt-2text-custom-blue w-full">
-                              <span className="font-semibold text-xl leading-relaxed text-center text-secondary">Gardening</span>                     
+                              <span className="font-semibold text-xl leading-relaxed text-center text-charcoal">Gardening</span>                     
                             </button>
                           </div>
                         </div>
@@ -485,7 +485,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                             </div>
             
                             <button className="flex items-center justify-center mt-2text-custom-blue w-full">
-                              <span className="font-semibold text-xl leading-relaxed text-center text-secondary">Gardening</span>                     
+                              <span className="font-semibold text-xl leading-relaxed text-center text-charcoal">Gardening</span>                     
                             </button>
                           </div>
                         </div> 
@@ -505,7 +505,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                             </div>
             
                             <button className="flex items-center justify-center mt-2text-custom-blue w-full">
-                              <span className="font-semibold text-xl leading-relaxed text-center text-secondary">Gardening</span>                     
+                              <span className="font-semibold text-xl leading-relaxed text-center text-charcoal">Gardening</span>                     
                             </button>
                           </div>
                         </div> 
@@ -525,7 +525,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                             </div>
             
                             <button className="flex items-center justify-center mt-2text-custom-blue w-full">
-                              <span className="font-semibold text-xl leading-relaxed text-center text-secondary">Gardening</span>                     
+                              <span className="font-semibold text-xl leading-relaxed text-center text-charcoal">Gardening</span>                     
                             </button>
                           </div>
                         </div> 
@@ -545,7 +545,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                             </div>
             
                             <button className="flex items-center justify-center mt-2text-custom-blue w-full">
-                              <span className="font-semibold text-xl leading-relaxed text-center text-secondary">Gardening</span>                     
+                              <span className="font-semibold text-xl leading-relaxed text-center text-charcoal">Gardening</span>                     
                             </button>
                           </div>
                         </div> 
@@ -565,7 +565,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                             </div>
             
                             <button className="flex items-center justify-center mt-2text-custom-blue w-full">
-                              <span className="font-semibold text-xl leading-relaxed text-center text-secondary">Gardening</span>                     
+                              <span className="font-semibold text-xl leading-relaxed text-center text-charcoal">Gardening</span>                     
                             </button>
                           </div>
                         </div>  
@@ -585,7 +585,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                           </div> 
                           <div className="px-6 py-4"> 
                             <button className="flex items-center justify-between text-custom-blue w-full">
-                              <h3 className="group-hover:text-primary font-semibold text-[22px] leading-8 text-secondary">Lawn care</h3>
+                              <h3 className="group-hover:text-primary font-semibold text-[22px] leading-8 text-charcoal">Lawn care</h3>
                               <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M1.5 13L7.5 7L1.5 1" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                               </svg> 
@@ -598,7 +598,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                           </div> 
                           <div className="px-6 py-4"> 
                             <button className="flex items-center justify-between text-custom-blue w-full">
-                              <h3 className="group-hover:text-primary font-semibold text-[22px] leading-8 text-secondary">Lawn care</h3>
+                              <h3 className="group-hover:text-primary font-semibold text-[22px] leading-8 text-charcoal">Lawn care</h3>
                               <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M1.5 13L7.5 7L1.5 1" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                               </svg> 
@@ -611,7 +611,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                           </div> 
                           <div className="px-6 py-4"> 
                             <button className="flex items-center justify-between text-custom-blue w-full">
-                              <h3 className="group-hover:text-primary font-semibold text-[22px] leading-8 text-secondary">Lawn care</h3>
+                              <h3 className="group-hover:text-primary font-semibold text-[22px] leading-8 text-charcoal">Lawn care</h3>
                               <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M1.5 13L7.5 7L1.5 1" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                               </svg> 
@@ -624,7 +624,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                           </div> 
                           <div className="px-6 py-4"> 
                             <button className="flex items-center justify-between text-custom-blue w-full">
-                              <h3 className="group-hover:text-primary font-semibold text-[22px] leading-8 text-secondary">Lawn care</h3>
+                              <h3 className="group-hover:text-primary font-semibold text-[22px] leading-8 text-charcoal">Lawn care</h3>
                               <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M1.5 13L7.5 7L1.5 1" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                               </svg> 
@@ -637,7 +637,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                           </div> 
                           <div className="px-6 py-4"> 
                             <button className="flex items-center justify-between text-custom-blue w-full">
-                              <h3 className="group-hover:text-primary font-semibold text-[22px] leading-8 text-secondary">Lawn care</h3>
+                              <h3 className="group-hover:text-primary font-semibold text-[22px] leading-8 text-charcoal">Lawn care</h3>
                               <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M1.5 13L7.5 7L1.5 1" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                               </svg> 
@@ -648,7 +648,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                 </div>
                 <div className="mx-auto pt-0 pb-16 container flex flex-col-reverse sm:flex-row align-center justify-between">
                   <div className="box-left text-center sm:text-left">
-                      <button className="bg-primary hover:bg-secondary text-white font-semibold text-[16px] py-3 px-9 rounded-[6px] w-full sm:w-auto">More about this service</button>
+                      <button className="bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-9 rounded-[6px] w-full sm:w-auto">More about this service</button>
                   </div>
                   <div className="box-right flex justify-center sm:block mb-6 sm:mb-0">
                       <div className="box-arrow flex align-center">
@@ -666,10 +666,10 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
 
 
 
-              <section className="bg-[#FBF8F4] py-12 md:py-20 font-[Poppins] text-secondary shadow-[10px_16px_0px_#272727] relative overflow-hidden mb-5">
+              <section className="bg-[#FBF8F4] py-12 md:py-20 font-[Poppins] text-charcoal shadow-[10px_16px_0px_#272727] relative overflow-hidden mb-5">
                 <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
                  
-                  <h1 className="mb-11 font-poppins font-semibold text-[34px] leading-[40px] sm:text-[40px] sm:leading-[50px] text-center text-secondary">
+                  <h1 className="mb-11 font-poppins font-semibold text-[34px] leading-[40px] sm:text-[40px] sm:leading-[50px] text-center text-charcoal">
                     Complete the details here
                   </h1>
 
@@ -837,8 +837,8 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                   <article className="mx-auto py-15 sm:py-20 container">
                   
                     <div className="flex justify-between items-center mb-10">
-                      <h2 className="text-center w-full sm:w-auto sm:text-left font-semibold text-[34px] leading-[44px] sm:text-[40px] sm:leading-[50px] text-secondary">Providers</h2> 
-                      <button className="hidden sm:block bg-primary hover:bg-secondary text-white font-semibold text-[16px] py-3 px-8 rounded-[6px]"> 
+                      <h2 className="text-center w-full sm:w-auto sm:text-left font-semibold text-[34px] leading-[44px] sm:text-[40px] sm:leading-[50px] text-charcoal">Providers</h2> 
+                      <button className="hidden sm:block bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-8 rounded-[6px]"> 
                         View all providers
                       </button>
                     </div>
@@ -857,8 +857,8 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                         <div className="px-4 pt-3 pb-6">
                           
                           <div className="flex justify-between items-center mb-2">
-                            <h3 className="font-semibold text-[22px] leading-8 text-secondary">Jill</h3>
-                            <span className="font-semibold text-base leading-normal text-secondary">100EUR ph</span>
+                            <h3 className="font-semibold text-[22px] leading-8 text-charcoal">Jill</h3>
+                            <span className="font-semibold text-base leading-normal text-charcoal">100EUR ph</span>
                           </div>
 
                         
@@ -901,16 +901,16 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                           </div>
 
                         
-                          <p className="font-normal text-base text-secondary">Service type is right over here</p>
+                          <p className="font-normal text-base text-charcoal">Service type is right over here</p>
 
                         
                           <div className="border-b border-[#D9D9D9] mt-3 mb-4"></div>
 
                           
                           <div className="flex flex-wrap gap-1 mt-2">
-                            <span className="font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2 mb-1">Punctual</span>
-                            <span className="font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2 mb-1">Reliable</span>
-                            <span className="font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2 mb-1">Calm & patient</span>
+                            <span className="font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2 mb-1">Punctual</span>
+                            <span className="font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2 mb-1">Reliable</span>
+                            <span className="font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2 mb-1">Calm & patient</span>
                           </div>
 
                           
@@ -929,8 +929,8 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                         <div className="px-4 pt-3 pb-6">
                           
                           <div className="flex justify-between items-center mb-2">
-                            <h3 className="font-semibold text-[22px] leading-8 text-secondary">Jill</h3>
-                            <span className="font-semibold text-base leading-normal text-secondary">100EUR ph</span>
+                            <h3 className="font-semibold text-[22px] leading-8 text-charcoal">Jill</h3>
+                            <span className="font-semibold text-base leading-normal text-charcoal">100EUR ph</span>
                           </div>
 
                         
@@ -973,16 +973,16 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                           </div>
 
                         
-                          <p className="font-normal text-base text-secondary">Service type is right over here</p>
+                          <p className="font-normal text-base text-charcoal">Service type is right over here</p>
 
                         
                           <div className="border-b border-[#D9D9D9] mt-3 mb-4"></div>
 
                           
                           <div className="flex flex-wrap gap-1 mt-2">
-                            <span className="font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Punctual</span>
-                            <span className="font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Reliable</span>
-                            <span className="font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Calm & patient</span>
+                            <span className="font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Punctual</span>
+                            <span className="font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Reliable</span>
+                            <span className="font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Calm & patient</span>
                           </div>
 
                           
@@ -1001,8 +1001,8 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                         <div className="px-4 pt-3 pb-6">
                           
                           <div className="flex justify-between items-center mb-2">
-                            <h3 className="font-semibold text-[22px] leading-8 text-secondary">Jill</h3>
-                            <span className="font-semibold text-base leading-normal text-secondary">100EUR ph</span>
+                            <h3 className="font-semibold text-[22px] leading-8 text-charcoal">Jill</h3>
+                            <span className="font-semibold text-base leading-normal text-charcoal">100EUR ph</span>
                           </div>
 
                         
@@ -1045,16 +1045,16 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                           </div>
 
                         
-                          <p className="font-normal text-base text-secondary">Service type is right over here</p>
+                          <p className="font-normal text-base text-charcoal">Service type is right over here</p>
 
                         
                           <div className="border-b border-[#D9D9D9] mt-3 mb-4"></div>
 
                           
                           <div className="flex flex-wrap gap-1 mt-2">
-                            <span className="font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Punctual</span>
-                            <span className="font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Reliable</span>
-                            <span className="font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Calm & patient</span>
+                            <span className="font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Punctual</span>
+                            <span className="font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Reliable</span>
+                            <span className="font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Calm & patient</span>
                           </div>
 
                           
@@ -1073,8 +1073,8 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                         <div className="px-4 pt-3 pb-6"> 
                           
                           <div className="flex justify-between items-center mb-2">
-                            <h3 className="font-semibold text-[22px] leading-8 text-secondary">Jill</h3>
-                            <span className="font-semibold text-base leading-normal text-secondary">100EUR ph</span>
+                            <h3 className="font-semibold text-[22px] leading-8 text-charcoal">Jill</h3>
+                            <span className="font-semibold text-base leading-normal text-charcoal">100EUR ph</span>
                           </div>
 
                         
@@ -1117,16 +1117,16 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                           </div>
 
                         
-                          <p className="font-normal text-base text-secondary">Service type is right over here</p>
+                          <p className="font-normal text-base text-charcoal">Service type is right over here</p>
 
                         
                           <div className="border-b border-[#D9D9D9] mt-3 mb-4"></div> 
 
                           
                           <div className="flex flex-wrap gap-1 mt-2">
-                            <span className="font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Punctual</span>
-                            <span className="font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Reliable</span>
-                            <span className="font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Calm & patient</span>
+                            <span className="font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Punctual</span>
+                            <span className="font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Reliable</span>
+                            <span className="font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Calm & patient</span>
                           </div>
 
                           
@@ -1138,7 +1138,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                     
 
                     </div>
-                    <button className="block sm:hidden w-full sm:w-auto mt-6 sm:mt-0 bg-primary hover:bg-secondary text-white font-semibold text-[16px] py-3 px-8 rounded-[6px]"> 
+                    <button className="block sm:hidden w-full sm:w-auto mt-6 sm:mt-0 bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-8 rounded-[6px]"> 
                       View all providers
                     </button>
                   </article>
@@ -1269,7 +1269,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                     /> 
                   </div> 
                  <div className="relative z-10 text-center mb-12">
-                  <h2 className="font-poppins font-semibold text-[40px] leading-[45px] md:text-[45px] md:leading-[55px] lg:text-[65px] lg:leading-[78px] text-center text-secondary">
+                  <h2 className="font-poppins font-semibold text-[40px] leading-[45px] md:text-[45px] md:leading-[55px] lg:text-[65px] lg:leading-[78px] text-center text-charcoal">
                     My request details
                   </h2>
                 </div>
@@ -1284,39 +1284,39 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                   </div>
 
                    <div className="mt-6 sm:mt-0 w-12/12 sm:w-7/12">
-                     <h3 className="font-poppins font-semibold text-base leading-6 text-secondary pb-4 border-b border-[#D9D9D9] mb-4">
+                     <h3 className="font-poppins font-semibold text-base leading-6 text-charcoal pb-4 border-b border-[#D9D9D9] mb-4">
                       Gardening
                     </h3>
 
                      <div className="flex justify-between items-start mb-3">
-                      <h4 className="font-poppins font-semibold text-2xl leading-8 text-secondary">
+                      <h4 className="font-poppins font-semibold text-2xl leading-8 text-charcoal">
                         Mowing the lawn
                       </h4>
-                      <span className="font-poppins font-semibold text-2xl leading-8 text-secondary">
+                      <span className="font-poppins font-semibold text-2xl leading-8 text-charcoal">
                         14EUR p/h
                       </span>
                     </div>
 
-                     <p className="font-poppins font-normal text-base leading-6 text-secondary mb-6">
+                     <p className="font-poppins font-normal text-base leading-6 text-charcoal mb-6">
                       Description is here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
                     </p>
 
                      <div className="flex flex-wrap">
-                       <span className="flex items-center space-x-2 font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-2 rounded-[999px] mr-2 mb-4">
+                       <span className="flex items-center space-x-2 font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-2 rounded-[999px] mr-2 mb-4">
                         <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8.75 2V6M16.75 2V6M3.75 10H21.75M5.75 4H19.75C20.8546 4 21.75 4.89543 21.75 6V20C21.75 21.1046 20.8546 22 19.75 22H5.75C4.64543 22 3.75 21.1046 3.75 20V6C3.75 4.89543 4.64543 4 5.75 4Z" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg> 
                         <span>02/11/2025</span>
                       </span>
                       
-                       <span className="flex items-center space-x-2 font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-2 rounded-[999px] mr-2 mb-4">
+                       <span className="flex items-center space-x-2 font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-2 rounded-[999px] mr-2 mb-4">
                         <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.75 2H14.75M12.75 14L15.75 11M20.75 14C20.75 18.4183 17.1683 22 12.75 22C8.33172 22 4.75 18.4183 4.75 14C4.75 9.58172 8.33172 6 12.75 6C17.1683 6 20.75 9.58172 20.75 14Z" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg> 
                         <span>10:00-12:00am (2 hours)</span>
                       </span>
 
-                       <span className="flex items-center space-x-2 font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-2 rounded-[999px] mr-2 mb-4">
+                       <span className="flex items-center space-x-2 font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-2 rounded-[999px] mr-2 mb-4">
                         <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.75 13C14.4069 13 15.75 11.6569 15.75 10C15.75 8.34315 14.4069 7 12.75 7C11.0931 7 9.75 8.34315 9.75 10C9.75 11.6569 11.0931 13 12.75 13Z" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M12.75 22C16.75 18 20.75 14.4183 20.75 10C20.75 5.58172 17.1683 2 12.75 2C8.33172 2 4.75 5.58172 4.75 10C4.75 14.4183 8.75 18 12.75 22Z" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1329,7 +1329,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
               </section> 
               <section className="bg-[#F7F9F9] py-16 sm:px-4 sm:px-6 lg:px-8">
                  <div className="text-center max-w-2xl mx-auto mb-[45px]">
-                  <h2 className="font-poppins font-semibold text-[34px] leading-[40px] md:text-[40px] md:leading-[50px] text-center text-secondary">
+                  <h2 className="font-poppins font-semibold text-[34px] leading-[40px] md:text-[40px] md:leading-[50px] text-center text-charcoal">
                     Public chat
                   </h2>
                  </div>
@@ -1340,7 +1340,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                     
                      <div className="flex-1"> 
                       <div className="bg-white px-4 py-5 rounded-xl shadow-sm max-w-2xl">
-                        <div className="flex items-center space-x-2 mb-2 font-poppins font-medium text-base leading-6 text-secondary">
+                        <div className="flex items-center space-x-2 mb-2 font-poppins font-medium text-base leading-6 text-charcoal">
                           <p className=" ">
                             Name Surname
                           </p>
@@ -1348,7 +1348,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                             09:34am
                           </span>
                         </div>
-                        <p className="font-poppins font-normal text-base leading-6 text-secondary">
+                        <p className="font-poppins font-normal text-base leading-6 text-charcoal">
                           Comment is over here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>
                       </div>
@@ -1358,12 +1358,12 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                    <div className="flex items-end justify-end space-x-4 mb-8">
                      <div className="flex-1 flex justify-end">
                         <div className="bg-[#E3EFF2] p-4 rounded-xl shadow-sm max-w-2xl">
-                          <div className="flex items-center space-x-2 mb-2 font-poppins font-medium text-base leading-6 text-secondary">
+                          <div className="flex items-center space-x-2 mb-2 font-poppins font-medium text-base leading-6 text-charcoal">
                             <span className="">
                               09:34am
                             </span>
                           </div>  
-                          <p className="font-poppins font-normal text-base leading-6 text-secondary">
+                          <p className="font-poppins font-normal text-base leading-6 text-charcoal">
                             Comment is over here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                           </p>
                         </div>
@@ -1377,7 +1377,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                       
                       <div className="flex-1"> 
                         <div className="bg-white p-4 rounded-xl shadow-sm max-w-2xl">
-                          <div className="flex items-center space-x-2 mb-2 font-poppins font-medium text-base leading-6 text-secondary">
+                          <div className="flex items-center space-x-2 mb-2 font-poppins font-medium text-base leading-6 text-charcoal">
                             <p className="">
                               Name Surname
                             </p>
@@ -1385,7 +1385,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                               09:34am
                             </span>
                           </div>  
-                          <p className="font-poppins font-normal text-base leading-6 text-secondary"> 
+                          <p className="font-poppins font-normal text-base leading-6 text-charcoal"> 
                             Comment is over here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                           </p>
                         </div>
@@ -1398,7 +1398,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                   <article className="mx-auto py-15 sm:py-20 container">
                   
                     <div className="flex justify-between items-center mb-10">
-                      <h2 className="text-center w-full font-semibold text-[34px] leading-[44px] sm:text-[40px] sm:leading-[50px] text-secondary">Offers / Quotes</h2>                       
+                      <h2 className="text-center w-full font-semibold text-[34px] leading-[44px] sm:text-[40px] sm:leading-[50px] text-charcoal">Offers / Quotes</h2>                       
                     </div>
 
                   
@@ -1415,8 +1415,8 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                         <div className="px-6 pt-3 pb-6"> 
                           
                           <div className="flex justify-between items-center mb-2">
-                            <h3 className="font-semibold text-[22px] leading-8 text-secondary">Jill</h3>
-                            <span className="font-semibold text-base leading-normal text-secondary">100EUR ph</span>
+                            <h3 className="font-semibold text-[22px] leading-8 text-charcoal">Jill</h3>
+                            <span className="font-semibold text-base leading-normal text-charcoal">100EUR ph</span>
                           </div>
 
                         
@@ -1459,16 +1459,16 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                           </div>
 
                         
-                          <p className="font-normal text-base text-secondary">Service type is right over here</p>
+                          <p className="font-normal text-base text-charcoal">Service type is right over here</p>
 
                         
                           <div className="border-b border-[#D9D9D9] mt-3 mb-4"></div> 
 
                           
                           <div className="flex flex-wrap gap-1 mt-2">
-                            <span className="font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Punctual</span>
-                            <span className="font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Reliable</span>
-                            <span className="font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Calm & patient</span>
+                            <span className="font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Punctual</span>
+                            <span className="font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Reliable</span>
+                            <span className="font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Calm & patient</span>
                           </div>
 
                           
@@ -1481,10 +1481,10 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                             </button>
                           </div> 
                         </div>
-                        <div className='p-6 bg-[#FBF8F4] font-poppins font-normal text-base leading-6 text-secondary'>
+                        <div className='p-6 bg-[#FBF8F4] font-poppins font-normal text-base leading-6 text-charcoal'>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                             <div className='flex font-medium text-sm leading-5 mt-2 mb-3'>
-                              <span className='mr-3 text-secondary'>Name</span> <span className='text-[#D9D9D9]'>|</span><span className='ml-3'>04-08-2025</span>
+                              <span className='mr-3 text-charcoal'>Name</span> <span className='text-[#D9D9D9]'>|</span><span className='ml-3'>04-08-2025</span>
                             </div>
                             <svg width="363" height="21" viewBox="0 0 363 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_170_11153)">
@@ -1534,8 +1534,8 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                         <div className="px-6 pt-3 pb-6"> 
                           
                           <div className="flex justify-between items-center mb-2">
-                            <h3 className="font-semibold text-[22px] leading-8 text-secondary">Jill</h3>
-                            <span className="font-semibold text-base leading-normal text-secondary">100EUR ph</span>
+                            <h3 className="font-semibold text-[22px] leading-8 text-charcoal">Jill</h3>
+                            <span className="font-semibold text-base leading-normal text-charcoal">100EUR ph</span>
                           </div>
 
                         
@@ -1578,16 +1578,16 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                           </div>
 
                         
-                          <p className="font-normal text-base text-secondary">Service type is right over here</p>
+                          <p className="font-normal text-base text-charcoal">Service type is right over here</p>
 
                         
                           <div className="border-b border-[#D9D9D9] mt-3 mb-4"></div> 
 
                           
                           <div className="flex flex-wrap gap-1 mt-2">
-                            <span className="font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Punctual</span>
-                            <span className="font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Reliable</span>
-                            <span className="font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Calm & patient</span>
+                            <span className="font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Punctual</span>
+                            <span className="font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Reliable</span>
+                            <span className="font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Calm & patient</span>
                           </div>
 
                           
@@ -1600,10 +1600,10 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                             </button>
                           </div> 
                         </div>
-                        <div className='p-6 bg-[#FBF8F4] font-poppins font-normal text-base leading-6 text-secondary'>
+                        <div className='p-6 bg-[#FBF8F4] font-poppins font-normal text-base leading-6 text-charcoal'>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                             <div className='flex font-medium text-sm leading-5 mt-2 mb-3'>
-                              <span className='mr-3 text-secondary'>Name</span> <span className='text-[#D9D9D9]'>|</span><span className='ml-3'>04-08-2025</span>
+                              <span className='mr-3 text-charcoal'>Name</span> <span className='text-[#D9D9D9]'>|</span><span className='ml-3'>04-08-2025</span>
                             </div>
                             <svg width="363" height="21" viewBox="0 0 363 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_170_11153)">
@@ -1653,8 +1653,8 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                         <div className="px-6 pt-3 pb-6"> 
                           
                           <div className="flex justify-between items-center mb-2">
-                            <h3 className="font-semibold text-[22px] leading-8 text-secondary">Jill</h3>
-                            <span className="font-semibold text-base leading-normal text-secondary">100EUR ph</span>
+                            <h3 className="font-semibold text-[22px] leading-8 text-charcoal">Jill</h3>
+                            <span className="font-semibold text-base leading-normal text-charcoal">100EUR ph</span>
                           </div>
 
                         
@@ -1697,16 +1697,16 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                           </div>
 
                         
-                          <p className="font-normal text-base text-secondary">Service type is right over here</p>
+                          <p className="font-normal text-base text-charcoal">Service type is right over here</p>
 
                         
                           <div className="border-b border-[#D9D9D9] mt-3 mb-4"></div> 
 
                           
                           <div className="flex flex-wrap gap-1 mt-2">
-                            <span className="font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Punctual</span>
-                            <span className="font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Reliable</span>
-                            <span className="font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Calm & patient</span>
+                            <span className="font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Punctual</span>
+                            <span className="font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Reliable</span>
+                            <span className="font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Calm & patient</span>
                           </div>
 
                           
@@ -1719,10 +1719,10 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                             </button>
                           </div> 
                         </div>
-                        <div className='p-6 bg-[#FBF8F4] font-poppins font-normal text-base leading-6 text-secondary'>
+                        <div className='p-6 bg-[#FBF8F4] font-poppins font-normal text-base leading-6 text-charcoal'>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                             <div className='flex font-medium text-sm leading-5 mt-2 mb-3'>
-                              <span className='mr-3 text-secondary'>Name</span> <span className='text-[#D9D9D9]'>|</span><span className='ml-3'>04-08-2025</span>
+                              <span className='mr-3 text-charcoal'>Name</span> <span className='text-[#D9D9D9]'>|</span><span className='ml-3'>04-08-2025</span>
                             </div>
                             <svg width="363" height="21" viewBox="0 0 363 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_170_11153)">
@@ -1772,8 +1772,8 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                         <div className="px-6 pt-3 pb-6"> 
                           
                           <div className="flex justify-between items-center mb-2">
-                            <h3 className="font-semibold text-[22px] leading-8 text-secondary">Jill</h3>
-                            <span className="font-semibold text-base leading-normal text-secondary">100EUR ph</span>
+                            <h3 className="font-semibold text-[22px] leading-8 text-charcoal">Jill</h3>
+                            <span className="font-semibold text-base leading-normal text-charcoal">100EUR ph</span>
                           </div>
 
                         
@@ -1816,16 +1816,16 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                           </div>
 
                         
-                          <p className="font-normal text-base text-secondary">Service type is right over here</p>
+                          <p className="font-normal text-base text-charcoal">Service type is right over here</p>
 
                         
                           <div className="border-b border-[#D9D9D9] mt-3 mb-4"></div> 
 
                           
                           <div className="flex flex-wrap gap-1 mt-2">
-                            <span className="font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Punctual</span>
-                            <span className="font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Reliable</span>
-                            <span className="font-medium text-base text-secondary bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Calm & patient</span>
+                            <span className="font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Punctual</span>
+                            <span className="font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Reliable</span>
+                            <span className="font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-[2px] rounded-[999px] mr-2">Calm & patient</span>
                           </div>
 
                           
@@ -1838,10 +1838,10 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                             </button>
                           </div> 
                         </div>
-                        <div className='p-6 bg-[#FBF8F4] font-poppins font-normal text-base leading-6 text-secondary'>
+                        <div className='p-6 bg-[#FBF8F4] font-poppins font-normal text-base leading-6 text-charcoal'>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                             <div className='flex font-medium text-sm leading-5 mt-2 mb-3'>
-                              <span className='mr-3 text-secondary'>Name</span> <span className='text-[#D9D9D9]'>|</span><span className='ml-3'>04-08-2025</span>
+                              <span className='mr-3 text-charcoal'>Name</span> <span className='text-[#D9D9D9]'>|</span><span className='ml-3'>04-08-2025</span>
                             </div>
                             <svg width="363" height="21" viewBox="0 0 363 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_170_11153)">
@@ -1884,7 +1884,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                     
 
                     </div>
-                    <button className="block sm:hidden w-full sm:w-auto mt-6 sm:mt-0 bg-primary hover:bg-secondary text-white font-semibold text-[16px] py-3 px-8 rounded-[6px]"> 
+                    <button className="block sm:hidden w-full sm:w-auto mt-6 sm:mt-0 bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-8 rounded-[6px]"> 
                       View all providers
                     </button>
                   </article>
@@ -1899,13 +1899,13 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
        {/* Top: Title */}
               <section className="shadow-[0px_0px_30px_rgba(0,0,0,0.08)]">
                 <div className='container mx-auto px-6 pt-32 pb-15 sm:pb-20'>
-                  <h2 className="font-poppins font-semibold text-[34px] leading-[44px] sm:text-[40px] sm:leading-[50px] text-center text-secondary mb-8">
+                  <h2 className="font-poppins font-semibold text-[34px] leading-[44px] sm:text-[40px] sm:leading-[50px] text-center text-charcoal mb-8">
                     Search results
                   </h2>
 
                   <div className="">
                     <div className="bg-[#F6F4F1] rounded-xl p-6  min-h-28 flex justify-center items-center max-w-[986px] m-auto">
-                      <p className="font-poppins font-semibold text-2xl leading-8 text-center text-secondary">
+                      <p className="font-poppins font-semibold text-2xl leading-8 text-center text-charcoal">
                         No search results
                       </p>
                     </div>
@@ -1916,7 +1916,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                         </div>
 
                          <div className="flex-1">
-                          <h3 className="font-poppins font-semibold text-[22px] leading-8 text-secondary mb-2">
+                          <h3 className="font-poppins font-semibold text-[22px] leading-8 text-charcoal mb-2">
                             Title is over here.
                           </h3>
                           <p className="font-poppins font-normal text-base leading-6 text-[#4B5563] line-clamp-3">
@@ -1936,7 +1936,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
 
                        <div className="bg-[#FBF8F4] rounded-xl px-8 py-6 md:flex items-center gap-4 shadow-sm">
                          <div className="flex-1">
-                          <h3 className="font-poppins font-semibold text-[22px] leading-8 text-secondary  mb-2">
+                          <h3 className="font-poppins font-semibold text-[22px] leading-8 text-charcoal  mb-2">
                             Title is over here.
                           </h3>
                           <p className="font-poppins font-normal text-base leading-6 text-[#4B5563] line-clamp-3">
@@ -1968,13 +1968,13 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                        <div className="flex items-center space-x-4">
                         <a
                           href="#"
-                          className="font-poppins font-semibold text-base leading-6 text-center tracking-[0.42em] text-secondary w-6 h-6 flex items-center justify-center"
+                          className="font-poppins font-semibold text-base leading-6 text-center tracking-[0.42em] text-charcoal w-6 h-6 flex items-center justify-center"
                         >
                           1
                         </a>
                         <a
                           href="#"
-                          className="font-poppins font-semibold text-base leading-6 text-center tracking-[0.42em] text-secondary w-6 h-6 flex items-center justify-center"
+                          className="font-poppins font-semibold text-base leading-6 text-center tracking-[0.42em] text-charcoal w-6 h-6 flex items-center justify-center"
                         >
                           2
                         </a>
@@ -1986,7 +1986,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                         </a>
                         <a
                           href="#"
-                          className="font-poppins font-semibold text-base leading-6 text-center tracking-[0.42em] text-secondary w-6 h-6 flex items-center justify-center"
+                          className="font-poppins font-semibold text-base leading-6 text-center tracking-[0.42em] text-charcoal w-6 h-6 flex items-center justify-center"
                         >
                           4
                         </a>
@@ -2018,7 +2018,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                 
                 <div className='relative z-10'>
                   <div className="text-center mb-12">
-                    <h2 className="font-poppins font-semibold text-[34px] leading-[44px] sm:text-[40px] sm:leading-[50px] text-center text-secondary">
+                    <h2 className="font-poppins font-semibold text-[34px] leading-[44px] sm:text-[40px] sm:leading-[50px] text-center text-charcoal">
                       FAQs
                     </h2>
                   </div>
@@ -2047,7 +2047,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                                 handleTabClick(faq.id);
                               }}
                               className={`block px-4 py-3 rounded-md transition-colors font-poppins font-semibold text-base leading-6
-                                ${activeTab === faq.id ? 'bg-[#228EA9] text-white' : 'text-secondary bg-[#E3EFF2] hover:bg-[#228EA9] hover:text-white'}`}
+                                ${activeTab === faq.id ? 'bg-[#228EA9] text-white' : 'text-charcoal bg-[#E3EFF2] hover:bg-[#228EA9] hover:text-white'}`}
                             >
                               {faq.tabTitle}
                             </a>
@@ -2066,7 +2066,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                               <div key={item.id} className={`py-6 ${index > 0 ? 'border-t border-[#D9D9D9]' : ''}`}>
                                 <div className="relative">
                                   <h4 
-                                    className="font-poppins font-semibold text-xl leading-8 text-secondary pr-8 cursor-pointer flex items-center justify-between"
+                                    className="font-poppins font-semibold text-xl leading-8 text-charcoal pr-8 cursor-pointer flex items-center justify-between"
                                     onClick={() => handleFaqItemToggle(item.id)} 
                                   >
                                     {item.title}
@@ -2084,7 +2084,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                                     </span>
                                   </h4>
                                    <div className={`${isOpen ? 'block' : 'hidden'} transition-all duration-300 ease-in-out overflow-hidden`}>
-                                    <p className="font-poppins font-normal text-base leading-6 text-secondary mt-2">
+                                    <p className="font-poppins font-normal text-base leading-6 text-charcoal mt-2">
                                       {item.description}
                                     </p>
                                     <a href="#" className="font-poppins font-semibold text-base leading-5 text-[#228EA9] mt-2 inline-flex items-center space-x-1">
@@ -2109,10 +2109,10 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
 
                <section className="max-w-[724px] m-auto py-[60px] px-6 sm:px-6 lg:px-8">
                 <div className="mb-8 border-b border-[#D9D9D9]">
-                  <h2 className="font-poppins font-semibold text-[34px] leading-[44px] md:text-[40px] md:leading-[50px] text-secondary mb-4">
+                  <h2 className="font-poppins font-semibold text-[34px] leading-[44px] md:text-[40px] md:leading-[50px] text-charcoal mb-4">
                     Heading is over here
                   </h2>
-                  <p className="font-poppins font-normal text-base leading-6 text-secondary">
+                  <p className="font-poppins font-normal text-base leading-6 text-charcoal">
                     Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.<br/><br/>
 
 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.<br/><br/>
@@ -2126,10 +2126,10 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
                 </div>
 
                  <div className="mb-8 border-b border-[#D9D9D9]">
-                  <h3 className="font-poppins font-semibold text-[22px] md:text-2xl leading-8 text-secondary mb-4">
+                  <h3 className="font-poppins font-semibold text-[22px] md:text-2xl leading-8 text-charcoal mb-4">
                     Heading is over here
                   </h3> 
-                  <p className="font-poppins font-normal text-base leading-6 text-secondary">
+                  <p className="font-poppins font-normal text-base leading-6 text-charcoal">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus eu sapien vitae scelerisque. Cras vulputate nunc sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum rhoncus. Vivamus quis ligula id enim porta consectetur quis vitae lacus. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
                   </p>
                   <div className="bg-[#EFEAE4] rounded-xl p-4 mt-10 mb-10">
@@ -2143,19 +2143,19 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
                 </div>
                 
                  <div className="mb-8">
-                  <h3 className="font-poppins font-semibold text-[22px] md:text-2xl leading-8 text-secondary mb-4">
+                  <h3 className="font-poppins font-semibold text-[22px] md:text-2xl leading-8 text-charcoal mb-4">
                     Heading is over here
                   </h3>
-                  <p className="font-poppins font-normal text-base leading-6 text-secondary">
+                  <p className="font-poppins font-normal text-base leading-6 text-charcoal">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus eu sapien vitae scelerisque. Cras vulputate nunc sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum rhoncus. Vivamus quis ligula id enim porta consectetur quis vitae lacus. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
                   </p>
                 </div>
 
                  <div className="mb-8">
-                  <h3 className="font-poppins font-semibold text-[22px] md:text-2xl leading-8 text-secondary mb-4">
+                  <h3 className="font-poppins font-semibold text-[22px] md:text-2xl leading-8 text-charcoal mb-4">
                     Heading is over here
                   </h3>
-                  <ul className="list-disc list-inside space-y-2 font-poppins font-normal text-base leading-6 text-secondary">
+                  <ul className="list-disc list-inside space-y-2 font-poppins font-normal text-base leading-6 text-charcoal">
                     <li>Lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
                     <li>Quisque faucibus ex sapien vitae pellentesque sem placerat.</li>
                     <li>In id cursus mi pretium tellus duis convallis.</li>
@@ -2177,10 +2177,10 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
                     </div>
                   </div>
                   <div className="md:w-1/2">
-                    <h3 className="font-poppins font-semibold text-[22px] md:text-2xl leading-8 text-secondary mb-4">
+                    <h3 className="font-poppins font-semibold text-[22px] md:text-2xl leading-8 text-charcoal mb-4">
                       Heading is over here
                     </h3>
-                    <p className="font-poppins font-normal text-base leading-6 text-secondary">
+                    <p className="font-poppins font-normal text-base leading-6 text-charcoal">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus eu sapien vitae scelerisque. Cras vulputate nunc sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum rhoncus. Vivamus quis ligula id enim porta consectetur quis vitae lacus. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
                     </p>
                   </div>
@@ -2191,7 +2191,7 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
               <section className="bg-white relative overflow-hidden">  
                 <div className="">
                   <div className="container mx-auto">
-                     <h2 className="font-semibold text-[34px] leading-[44px] md:text-[40px] md:leading-[50px] text-secondary text-center">Sub-Services</h2>   
+                     <h2 className="font-semibold text-[34px] leading-[44px] md:text-[40px] md:leading-[50px] text-charcoal text-center">Sub-Services</h2>   
                   </div>   
                 </div> 
                 <div className="mx-auto pt-5 sm:pt-10 pb-10 container">
@@ -2201,7 +2201,7 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
                       <img src="/v2-img02.jpg" alt="rovider thumbnail" className="w-full h-full object-cover"/>
                       </div> 
                       <div className="px-6 pt-4 pb-5">  
-                        <h3 className="text-center group-hover:text-primary font-semibold text-[22px] leading-8 text-secondary">Lawn care</h3>  
+                        <h3 className="text-center group-hover:text-primary font-semibold text-[22px] leading-8 text-charcoal">Lawn care</h3>  
                         <button className="w-full mt-3 bg-transparent text-teal-600 border border-primary py-[11px] rounded-[6px] hover:bg-primary hover:text-white font-semibold">View provider profile</button>
                       </div>
                     </div>
@@ -2210,7 +2210,7 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
                       <img src="/v2-img02.jpg" alt="rovider thumbnail" className="w-full h-full object-cover"/>
                       </div> 
                       <div className="px-6 pt-4 pb-5">  
-                        <h3 className="text-center group-hover:text-primary font-semibold text-[22px] leading-8 text-secondary">Lawn care</h3>  
+                        <h3 className="text-center group-hover:text-primary font-semibold text-[22px] leading-8 text-charcoal">Lawn care</h3>  
                         <button className="w-full mt-3 bg-transparent text-teal-600 border border-primary py-[11px] rounded-[6px] hover:bg-primary hover:text-white font-semibold">View provider profile</button>
                       </div>
                     </div>
@@ -2219,7 +2219,7 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
                       <img src="/v2-img02.jpg" alt="rovider thumbnail" className="w-full h-full object-cover"/>
                       </div> 
                       <div className="px-6 pt-4 pb-5">  
-                        <h3 className="text-center group-hover:text-primary font-semibold text-[22px] leading-8 text-secondary">Lawn care</h3>  
+                        <h3 className="text-center group-hover:text-primary font-semibold text-[22px] leading-8 text-charcoal">Lawn care</h3>  
                         <button className="w-full mt-3 bg-transparent text-teal-600 border border-primary py-[11px] rounded-[6px] hover:bg-primary hover:text-white font-semibold">View provider profile</button>
                       </div>
                     </div>
@@ -2228,7 +2228,7 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
                       <img src="/v2-img02.jpg" alt="rovider thumbnail" className="w-full h-full object-cover"/>
                       </div> 
                       <div className="px-6 pt-4 pb-5">  
-                        <h3 className="text-center group-hover:text-primary font-semibold text-[22px] leading-8 text-secondary">Lawn care</h3>  
+                        <h3 className="text-center group-hover:text-primary font-semibold text-[22px] leading-8 text-charcoal">Lawn care</h3>  
                         <button className="w-full mt-3 bg-transparent text-teal-600 border border-primary py-[11px] rounded-[6px] hover:bg-primary hover:text-white font-semibold">View provider profile</button>
                       </div>
                     </div> 
@@ -2236,7 +2236,7 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
                 </div>
                 <div className="mx-auto pt-0 pb-16 container flex flex-col-reverse sm:flex-row align-center justify-between">
                   <div className="box-left text-center sm:text-left">
-                    <button className="bg-primary hover:bg-secondary text-white font-semibold text-[16px] py-3 px-9 rounded-[6px] w-full sm:w-auto">More about this service</button>
+                    <button className="bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-9 rounded-[6px] w-full sm:w-auto">More about this service</button>
                   </div>
                   <div className="box-right flex justify-center sm:block mb-6 sm:mb-0">
                     <div className="box-arrow flex align-center">
@@ -2287,10 +2287,10 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
                           </svg> 
                         </div>
                         <div>
-                          <h3 className="font-poppins font-semibold text-2xl leading-8 text-secondary mb-2">
+                          <h3 className="font-poppins font-semibold text-2xl leading-8 text-charcoal mb-2">
                             Advantage is over here
                           </h3>
-                          <p className="font-poppins font-normal text-base leading-6 text-secondary">
+                          <p className="font-poppins font-normal text-base leading-6 text-charcoal">
                             Description is over here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
                           </p>
                         </div>
@@ -2316,10 +2316,10 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
 
                         </div>
                         <div>
-                          <h3 className="font-poppins font-semibold text-2xl leading-8 text-secondary mb-2">
+                          <h3 className="font-poppins font-semibold text-2xl leading-8 text-charcoal mb-2">
                             Advantage is over here
                           </h3>
-                          <p className="font-poppins font-normal text-base leading-6 text-secondary">
+                          <p className="font-poppins font-normal text-base leading-6 text-charcoal">
                             Description is over here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
                           </p>
                         </div>
@@ -2345,10 +2345,10 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
 
                         </div>
                         <div>
-                          <h3 className="font-poppins font-semibold text-2xl leading-8 text-secondary mb-3">
+                          <h3 className="font-poppins font-semibold text-2xl leading-8 text-charcoal mb-3">
                             Advantage is over here
                           </h3>
-                          <p className="font-poppins font-normal text-base leading-6 text-secondary">
+                          <p className="font-poppins font-normal text-base leading-6 text-charcoal">
                             Description is over here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
                           </p>
                         </div>

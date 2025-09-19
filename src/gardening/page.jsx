@@ -13,7 +13,7 @@ const Gardening = () => {
             <section className="bg-white relative overflow-hidden">  
                 <div className="pt-20">
                     <div className="container mx-auto">
-                        <h2 className="font-semibold text-[34px] leading-[44px] md:text-[40px] md:leading-[50px] text-secondary text-center">Sub-Services</h2>   
+                        <h2 className="font-semibold text-[34px] leading-[44px] md:text-[40px] md:leading-[50px] text-charcoal text-center">Sub-Services</h2>   
                     </div>   
                 </div> 
                 <div className="mx-auto pt-5 sm:pt-10 pb-10 container">
@@ -23,7 +23,7 @@ const Gardening = () => {
                         <img src="/v2-img02.jpg" alt="rovider thumbnail" className="w-full h-full object-cover"/>
                         </div> 
                         <div className="px-6 pt-4 pb-5">  
-                        <h3 className="text-center group-hover:text-primary font-semibold text-[22px] leading-8 text-secondary">Lawn care</h3>  
+                        <h3 className="text-center group-hover:text-primary font-semibold text-[22px] leading-8 text-charcoal">Lawn care</h3>  
                         <button className="w-full mt-3 bg-transparent text-teal-600 border border-primary py-[11px] rounded-[6px] hover:bg-primary hover:text-white font-semibold">View provider profile</button>
                         </div>
                     </div>
@@ -32,7 +32,7 @@ const Gardening = () => {
                         <img src="/v2-img02.jpg" alt="rovider thumbnail" className="w-full h-full object-cover"/>
                         </div> 
                         <div className="px-6 pt-4 pb-5">  
-                        <h3 className="text-center group-hover:text-primary font-semibold text-[22px] leading-8 text-secondary">Lawn care</h3>  
+                        <h3 className="text-center group-hover:text-primary font-semibold text-[22px] leading-8 text-charcoal">Lawn care</h3>  
                         <button className="w-full mt-3 bg-transparent text-teal-600 border border-primary py-[11px] rounded-[6px] hover:bg-primary hover:text-white font-semibold">View provider profile</button>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ const Gardening = () => {
                         <img src="/v2-img02.jpg" alt="rovider thumbnail" className="w-full h-full object-cover"/>
                         </div> 
                         <div className="px-6 pt-4 pb-5">  
-                        <h3 className="text-center group-hover:text-primary font-semibold text-[22px] leading-8 text-secondary">Lawn care</h3>  
+                        <h3 className="text-center group-hover:text-primary font-semibold text-[22px] leading-8 text-charcoal">Lawn care</h3>  
                         <button className="w-full mt-3 bg-transparent text-teal-600 border border-primary py-[11px] rounded-[6px] hover:bg-primary hover:text-white font-semibold">View provider profile</button>
                         </div>
                     </div>
@@ -50,7 +50,7 @@ const Gardening = () => {
                         <img src="/v2-img02.jpg" alt="rovider thumbnail" className="w-full h-full object-cover"/>
                         </div> 
                         <div className="px-6 pt-4 pb-5">  
-                        <h3 className="text-center group-hover:text-primary font-semibold text-[22px] leading-8 text-secondary">Lawn care</h3>  
+                        <h3 className="text-center group-hover:text-primary font-semibold text-[22px] leading-8 text-charcoal">Lawn care</h3>  
                         <button className="w-full mt-3 bg-transparent text-teal-600 border border-primary py-[11px] rounded-[6px] hover:bg-primary hover:text-white font-semibold">View provider profile</button>
                         </div>
                     </div> 
@@ -58,7 +58,7 @@ const Gardening = () => {
                 </div>
                 <div className="mx-auto pt-0 pb-16 container flex flex-col-reverse sm:flex-row align-center justify-between">
                     <div className="box-left text-center sm:text-left">
-                    <button className="bg-primary hover:bg-secondary text-white font-semibold text-[16px] py-3 px-9 rounded-[6px] w-full sm:w-auto">More about this service</button>
+                    <button className="bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-9 rounded-[6px] w-full sm:w-auto">More about this service</button>
                     </div>
                     <div className="box-right flex justify-center sm:block mb-6 sm:mb-0">
                     <div className="box-arrow flex align-center">
@@ -109,10 +109,10 @@ const Gardening = () => {
                             </svg> 
                         </div>
                         <div>
-                            <h3 className="font-poppins font-semibold text-2xl leading-8 text-secondary mb-2">
+                            <h3 className="font-poppins font-semibold text-2xl leading-8 text-charcoal mb-2">
                             Advantage is over here
                             </h3>
-                            <p className="font-poppins font-normal text-base leading-6 text-secondary">
+                            <p className="font-poppins font-normal text-base leading-6 text-charcoal">
                             Description is over here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
                             </p>
                         </div>
@@ -138,10 +138,10 @@ const Gardening = () => {
 
                         </div>
                         <div>
-                            <h3 className="font-poppins font-semibold text-2xl leading-8 text-secondary mb-2">
+                            <h3 className="font-poppins font-semibold text-2xl leading-8 text-charcoal mb-2">
                             Advantage is over here
                             </h3>
-                            <p className="font-poppins font-normal text-base leading-6 text-secondary">
+                            <p className="font-poppins font-normal text-base leading-6 text-charcoal">
                             Description is over here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
                             </p>
                         </div>
@@ -167,10 +167,10 @@ const Gardening = () => {
 
                         </div>
                         <div>
-                            <h3 className="font-poppins font-semibold text-2xl leading-8 text-secondary mb-3">
+                            <h3 className="font-poppins font-semibold text-2xl leading-8 text-charcoal mb-3">
                             Advantage is over here
                             </h3>
-                            <p className="font-poppins font-normal text-base leading-6 text-secondary">
+                            <p className="font-poppins font-normal text-base leading-6 text-charcoal">
                             Description is over here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
                             </p>
                         </div>

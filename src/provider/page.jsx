@@ -35,6 +35,10 @@ const Provider = () => {
   const handleTabClick = (tabId) => {
     setActiveTab(tabId);
   };
+
+  
+
+
   
   return (
 
@@ -84,24 +88,24 @@ const Provider = () => {
                 <div className="px-10 py-9 flex items-center justify-center min-h-52 group bg-white border border-[#EEEEEE] shadow-[0px_14px_22px_rgba(0,0,0,0.07)] rounded-xl">
                     <div className="w-full flex flex-col items-center text-center">
                     <img alt="" src="sign-up-icon1.svg"/> 
-                    <span className="mt-4 font-semibold text-[22px] leading-8 text-secondary group-hover:text-primary">I need a service</span>
-                    <button className="w-full mt-4 bg-primary hover:bg-secondary text-white font-semibold text-[16px] py-3 px-9 rounded-[6px]">Create account</button>
+                    <span className="mt-4 font-semibold text-[22px] leading-8 text-charcoal group-hover:text-primary">I need a service</span>
+                    <button className="w-full mt-4 bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-9 rounded-[6px]">Create account</button>
                     </div>
                 </div>
 
                 <div className="px-10 py-9 flex items-center justify-center min-h-52 group bg-white border border-[#EEEEEE] shadow-[0px_14px_22px_rgba(0,0,0,0.07)] rounded-xl">
                     <div className="w-full flex flex-col items-center text-center">
                     <img alt="" src="sign-up-icon2.svg"/>    
-                    <span className="mt-4 font-semibold text-[22px] leading-8 text-secondary group-hover:text-primary">Become a service provider</span>
-                    <button className="w-full mt-4 bg-primary hover:bg-secondary text-white font-semibold text-[16px] py-3 px-9 rounded-[6px]">Become a provider</button>
+                    <span className="mt-4 font-semibold text-[22px] leading-8 text-charcoal group-hover:text-primary">Become a service provider</span>
+                    <button className="w-full mt-4 bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-9 rounded-[6px]">Become a provider</button>
                     </div>
                 </div>
 
                 <div className="px-10 py-9 flex items-center justify-center min-h-52 group bg-white border border-[#EEEEEE] shadow-[0px_14px_22px_rgba(0,0,0,0.07)] rounded-xl">
                     <div className="w-full flex flex-col items-center text-center">
                     <img alt="" src="sign-up-icon3.svg"/> 
-                    <span className="mt-4 font-semibold text-[22px] leading-8 text-secondary group-hover:text-primary">I already have an account</span>
-                    <button className="w-full mt-4 bg-primary hover:bg-secondary text-white font-semibold text-[16px] py-3 px-9 rounded-[6px]">Login</button>
+                    <span className="mt-4 font-semibold text-[22px] leading-8 text-charcoal group-hover:text-primary">I already have an account</span>
+                    <button className="w-full mt-4 bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-9 rounded-[6px]">Login</button>
                     </div>
                 </div>
                 </div>
@@ -111,7 +115,7 @@ const Provider = () => {
             <div className="bg-white pb-32">
                 <div className="mx-auto block md:flex items-center">
                 
-                    <h2 className="text-center md:text-left mb-6 md:mb-0 font-poppins font-semibold text-[22px] leading-8 text-secondary md:mr-10">Partners:</h2>
+                    <h2 className="text-center md:text-left mb-6 md:mb-0 font-poppins font-semibold text-[22px] leading-8 text-charcoal md:mr-10">Partners:</h2>
 
                 
                     <div className="flex-grow overflow-x-auto">
@@ -218,7 +222,7 @@ const Provider = () => {
                         <input
                             type="text"
                             placeholder="Search"
-                            className="mb-4 md:mb-0 md:mr-4 border border-[#D9D9D9] rounded-lg w-full py-3 px-4 font-poppins font-normal text-base leading-6 text-secondary focus:outline-none"
+                            className="mb-4 md:mb-0 md:mr-4 border border-[#D9D9D9] rounded-lg w-full py-3 px-4 font-poppins font-normal text-base leading-6 text-charcoal focus:outline-none"
                         />
                         <button className="w-full sm:w-[110px] flex-shrink-0 text-center py-[12px] bg-[#228EA9] text-white rounded-md font-poppins font-medium text-base">
                             Search
@@ -240,17 +244,17 @@ const Provider = () => {
         
             <div className="flex items-center justify-center mb-10 sm:mb-22">
             <img src="/v2-logo.png" alt="Manuel2Fix Logo" className="h-[42px] w-[39px] sm:h-16 sm:w-16 mb-2" />
-            <h1 className="font-jakarta font-extrabold text-[12px] leading-[18px] sm:text-[21.95px] sm:leading-8 text-secondary ml-4">Manuel2Fix</h1>
+            <h1 className="font-jakarta font-extrabold text-[12px] leading-[18px] sm:text-[21.95px] sm:leading-8 text-charcoal ml-4">Manuel2Fix</h1>
             </div>
             
         
-            <h2 className="font-poppins font-semibold text-[40px] leading-[45px] md:text-[65px] md:leading-[78px] text-center text-secondary mb-12">Login</h2>
+            <h2 className="font-poppins font-semibold text-[40px] leading-[45px] md:text-[65px] md:leading-[78px] text-center text-charcoal mb-12">Login</h2>
             
         
             <form> 
             
             <div className="mb-8">
-                <label htmlFor="email" className="block font-poppins font-medium text-base text-secondary mb-1">Email</label>
+                <label htmlFor="email" className="block font-poppins font-medium text-base text-charcoal mb-1">Email</label>
                 <input 
                 type="email" 
                 id="email" 
@@ -261,7 +265,7 @@ const Provider = () => {
             
             
             <div className="mb-1">
-                <label htmlFor="password" className="block font-poppins font-medium text-base text-secondary mb-1">Password</label>
+                <label htmlFor="password" className="block font-poppins font-medium text-base text-charcoal mb-1">Password</label>
                 <input 
                 type="password" 
                 id="password" 
@@ -276,10 +280,10 @@ const Provider = () => {
             </div>
             
             <div className="mt-8 sm:mt-0 flex-col sm:flex-row flex items-center"> 
-                <button type="submit" className="w-full sm:w-auto bg-primary hover:bg-secondary text-white font-semibold text-[16px] py-3 px-7 rounded-[6px]"> 
+                <button type="submit" className="w-full sm:w-auto bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-7 rounded-[6px]"> 
                     Login
                 </button> 
-                <div className="ml-0 sm:ml-8 mt-4 sm:mt-0 text-center font-poppins font-medium text-base text-secondary">
+                <div className="ml-0 sm:ml-8 mt-4 sm:mt-0 text-center font-poppins font-medium text-base text-charcoal">
                     <span>Don't have an account? </span>
                     <a href="#" className="text-primary hover:underline">Sign up</a>
                 </div>
@@ -310,16 +314,16 @@ const Provider = () => {
         
             <div className="flex items-center justify-center mb-10 sm:mb-22">
             <img src="/v2-logo.png" alt="Manuel2Fix Logo" className="h-[42px] w-[39px] sm:h-16 sm:w-16 mb-2" />
-            <h1 className="font-jakarta font-extrabold text-[12px] leading-[18px] sm:text-[21.95px] sm:leading-8 text-secondary ml-4">Manuel2Fix</h1>
+            <h1 className="font-jakarta font-extrabold text-[12px] leading-[18px] sm:text-[21.95px] sm:leading-8 text-charcoal ml-4">Manuel2Fix</h1>
             </div>
             
         
-            <h2 className="font-poppins font-semibold text-[40px] leading-[45px] md:text-[65px] md:leading-[78px] text-center text-secondary mb-12">Sign up</h2>
+            <h2 className="font-poppins font-semibold text-[40px] leading-[45px] md:text-[65px] md:leading-[78px] text-center text-charcoal mb-12">Sign up</h2>
             
         
             <form> 
             <div className="mb-8">
-                <label htmlFor="email" className="block font-poppins font-medium text-base text-secondary mb-1">First name</label>
+                <label htmlFor="email" className="block font-poppins font-medium text-base text-charcoal mb-1">First name</label>
                 <input 
                 type="text" 
                 id="fname" 
@@ -329,7 +333,7 @@ const Provider = () => {
             </div>
 
             <div className="mb-8">
-                <label htmlFor="email" className="block font-poppins font-medium text-base text-secondary mb-1">Last name</label>
+                <label htmlFor="email" className="block font-poppins font-medium text-base text-charcoal mb-1">Last name</label>
                 <input 
                 type="text" 
                 id="lname" 
@@ -339,7 +343,7 @@ const Provider = () => {
             </div>
 
             <div className="mb-8">
-                <label htmlFor="email" className="block font-poppins font-medium text-base text-secondary mb-1">Email</label>
+                <label htmlFor="email" className="block font-poppins font-medium text-base text-charcoal mb-1">Email</label>
                 <input 
                 type="email" 
                 id="email" 
@@ -350,7 +354,7 @@ const Provider = () => {
             
             
             <div className="mb-1">
-                <label htmlFor="password" className="block font-poppins font-medium text-base text-secondary mb-1">Password</label>
+                <label htmlFor="password" className="block font-poppins font-medium text-base text-charcoal mb-1">Password</label>
                 <input 
                 type="password" 
                 id="password" 
@@ -365,10 +369,10 @@ const Provider = () => {
             </div>
             
             <div className="mt-8 sm:mt-0 flex-col sm:flex-row flex items-center"> 
-                <button type="submit" className="w-full sm:w-auto bg-primary hover:bg-secondary text-white font-semibold text-[16px] py-3 px-7 rounded-[6px]"> 
+                <button type="submit" className="w-full sm:w-auto bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-7 rounded-[6px]"> 
                     Sign up
                 </button> 
-                <div className="ml-0 sm:ml-8 mt-4 sm:mt-0 text-center font-poppins font-medium text-base text-secondary">
+                <div className="ml-0 sm:ml-8 mt-4 sm:mt-0 text-center font-poppins font-medium text-base text-charcoal">
                     <span>Already have an account? </span>
                     <a href="#" className="text-primary hover:underline">Login</a>
                 </div>
@@ -398,7 +402,7 @@ const Provider = () => {
 
     <section className="pt-20 pb-15 sm:py-20 bg-white relative overflow-hidden">
         <div className="container mx-auto text-center relative z-10">
-            <h2 className="font-poppins font-semibold text-[40px] leading-[45px] md:text-[65px] md:leading-[78px] text-center text-secondary mb-4 sm:mb-8">Profile details</h2> 
+            <h2 className="font-poppins font-semibold text-[40px] leading-[45px] md:text-[65px] md:leading-[78px] text-center text-charcoal mb-4 sm:mb-8">Profile details</h2> 
              
         </div>
         <div className="w-full md:w-7/12 lg:w-1/3 absolute top-0 right-0">
@@ -446,10 +450,14 @@ const Provider = () => {
                 key={tab.id}
                 className={`tab-content ${activeTab === tab.id ? 'block' : 'hidden'}`}
               >
-                {/* Content for each tab */}
-                <p className="text-gray-600">{tab.content}</p>
 
-
+                
+                {/* Sử dụng component thay vì viết HTML trực tiếp */}
+                {tab.id === 1 && <Tab1Content />}
+                {tab.id === 2 && <Tab2Content />}
+                {/* Thêm các tab khác nếu cần */}
+                {tab.id === 3 && <Tab3Content />}
+                
                 <div className="">
                     <h2 className="text-2xl font-semibold text-gray-800 mb-6">Skills</h2>
                     
@@ -528,7 +536,7 @@ const Provider = () => {
                         Next
                         </button>
                     </div>
-                    </div>    
+                </div>    
 
 
               </div>

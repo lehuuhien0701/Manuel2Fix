@@ -66,13 +66,13 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
 
         <section className="shadow-[0px_0px_30px_rgba(0,0,0,0.08)]">
             <div className='container mx-auto px-6 pt-32 pb-15 sm:pb-20'>
-                <h2 className="font-poppins font-semibold text-[34px] leading-[44px] sm:text-[40px] sm:leading-[50px] text-center text-secondary mb-8">
+                <h2 className="font-poppins font-semibold text-[34px] leading-[44px] sm:text-[40px] sm:leading-[50px] text-center text-charcoal mb-8">
                 Search results
                 </h2>
 
                 <div className="">
                 <div className="bg-[#F6F4F1] rounded-xl p-6  min-h-28 flex justify-center items-center max-w-[986px] m-auto">
-                    <p className="font-poppins font-semibold text-2xl leading-8 text-center text-secondary">
+                    <p className="font-poppins font-semibold text-2xl leading-8 text-center text-charcoal">
                     No search results
                     </p>
                 </div>
@@ -83,7 +83,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                     </div>
 
                         <div className="flex-1">
-                        <h3 className="font-poppins font-semibold text-[22px] leading-8 text-secondary mb-2">
+                        <h3 className="font-poppins font-semibold text-[22px] leading-8 text-charcoal mb-2">
                         Title is over here.
                         </h3>
                         <p className="font-poppins font-normal text-base leading-6 text-[#4B5563] line-clamp-3">
@@ -103,7 +103,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
 
                     <div className="bg-[#FBF8F4] rounded-xl px-8 py-6 md:flex items-center gap-4 shadow-sm">
                         <div className="flex-1">
-                        <h3 className="font-poppins font-semibold text-[22px] leading-8 text-secondary  mb-2">
+                        <h3 className="font-poppins font-semibold text-[22px] leading-8 text-charcoal  mb-2">
                         Title is over here.
                         </h3>
                         <p className="font-poppins font-normal text-base leading-6 text-[#4B5563] line-clamp-3">
@@ -135,13 +135,13 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                     <div className="flex items-center space-x-4">
                     <a
                         href="#"
-                        className="font-poppins font-semibold text-base leading-6 text-center tracking-[0.42em] text-secondary w-6 h-6 flex items-center justify-center"
+                        className="font-poppins font-semibold text-base leading-6 text-center tracking-[0.42em] text-charcoal w-6 h-6 flex items-center justify-center"
                     >
                         1
                     </a>
                     <a
                         href="#"
-                        className="font-poppins font-semibold text-base leading-6 text-center tracking-[0.42em] text-secondary w-6 h-6 flex items-center justify-center"
+                        className="font-poppins font-semibold text-base leading-6 text-center tracking-[0.42em] text-charcoal w-6 h-6 flex items-center justify-center"
                     >
                         2
                     </a>
@@ -153,7 +153,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                     </a>
                     <a
                         href="#"
-                        className="font-poppins font-semibold text-base leading-6 text-center tracking-[0.42em] text-secondary w-6 h-6 flex items-center justify-center"
+                        className="font-poppins font-semibold text-base leading-6 text-center tracking-[0.42em] text-charcoal w-6 h-6 flex items-center justify-center"
                     >
                         4
                     </a>
@@ -185,7 +185,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
 
             <div className='relative z-10'>
                 <div className="text-center mb-12">
-                <h2 className="font-poppins font-semibold text-[34px] leading-[44px] sm:text-[40px] sm:leading-[50px] text-center text-secondary">
+                <h2 className="font-poppins font-semibold text-[34px] leading-[44px] sm:text-[40px] sm:leading-[50px] text-center text-charcoal">
                     FAQs
                 </h2>
                 </div>
@@ -214,7 +214,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                             handleTabClick(faq.id);
                             }}
                             className={`block px-4 py-3 rounded-md transition-colors font-poppins font-semibold text-base leading-6
-                            ${activeTab === faq.id ? 'bg-[#228EA9] text-white' : 'text-secondary bg-[#E3EFF2] hover:bg-[#228EA9] hover:text-white'}`}
+                            ${activeTab === faq.id ? 'bg-[#228EA9] text-white' : 'text-charcoal bg-[#E3EFF2] hover:bg-[#228EA9] hover:text-white'}`}
                         >
                             {faq.tabTitle}
                         </a>
@@ -233,7 +233,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                             <div key={item.id} className={`py-6 ${index > 0 ? 'border-t border-[#D9D9D9]' : ''}`}>
                             <div className="relative">
                                 <h4 
-                                className="font-poppins font-semibold text-xl leading-8 text-secondary pr-8 cursor-pointer flex items-center justify-between"
+                                className="font-poppins font-semibold text-xl leading-8 text-charcoal pr-8 cursor-pointer flex items-center justify-between"
                                 onClick={() => handleFaqItemToggle(item.id)} 
                                 >
                                 {item.title}
@@ -251,7 +251,7 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                                 </span>
                                 </h4>
                                 <div className={`${isOpen ? 'block' : 'hidden'} transition-all duration-300 ease-in-out overflow-hidden`}>
-                                <p className="font-poppins font-normal text-base leading-6 text-secondary mt-2">
+                                <p className="font-poppins font-normal text-base leading-6 text-charcoal mt-2">
                                     {item.description}
                                 </p>
                                 <a href="#" className="font-poppins font-semibold text-base leading-5 text-[#228EA9] mt-2 inline-flex items-center space-x-1">
@@ -276,10 +276,10 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
 
             <section className="max-w-[724px] m-auto py-[60px] px-6 sm:px-6 lg:px-8">
             <div className="mb-8 border-b border-[#D9D9D9]">
-                <h2 className="font-poppins font-semibold text-[34px] leading-[44px] md:text-[40px] md:leading-[50px] text-secondary mb-4">
+                <h2 className="font-poppins font-semibold text-[34px] leading-[44px] md:text-[40px] md:leading-[50px] text-charcoal mb-4">
                 Heading is over here
                 </h2>
-                <p className="font-poppins font-normal text-base leading-6 text-secondary">
+                <p className="font-poppins font-normal text-base leading-6 text-charcoal">
                 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.<br/><br/>
 
             Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.<br/><br/>
@@ -293,10 +293,10 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
             </div>
 
                 <div className="mb-8 border-b border-[#D9D9D9]">
-                <h3 className="font-poppins font-semibold text-[22px] md:text-2xl leading-8 text-secondary mb-4">
+                <h3 className="font-poppins font-semibold text-[22px] md:text-2xl leading-8 text-charcoal mb-4">
                 Heading is over here
                 </h3> 
-                <p className="font-poppins font-normal text-base leading-6 text-secondary">
+                <p className="font-poppins font-normal text-base leading-6 text-charcoal">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus eu sapien vitae scelerisque. Cras vulputate nunc sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum rhoncus. Vivamus quis ligula id enim porta consectetur quis vitae lacus. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
                 </p>
                 <div className="bg-[#EFEAE4] rounded-xl p-4 mt-10 mb-10">
@@ -310,19 +310,19 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
             </div>
 
                 <div className="mb-8">
-                <h3 className="font-poppins font-semibold text-[22px] md:text-2xl leading-8 text-secondary mb-4">
+                <h3 className="font-poppins font-semibold text-[22px] md:text-2xl leading-8 text-charcoal mb-4">
                 Heading is over here
                 </h3>
-                <p className="font-poppins font-normal text-base leading-6 text-secondary">
+                <p className="font-poppins font-normal text-base leading-6 text-charcoal">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus eu sapien vitae scelerisque. Cras vulputate nunc sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum rhoncus. Vivamus quis ligula id enim porta consectetur quis vitae lacus. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
                 </p>
             </div>
 
                 <div className="mb-8">
-                <h3 className="font-poppins font-semibold text-[22px] md:text-2xl leading-8 text-secondary mb-4">
+                <h3 className="font-poppins font-semibold text-[22px] md:text-2xl leading-8 text-charcoal mb-4">
                 Heading is over here
                 </h3>
-                <ul className="list-disc list-inside space-y-2 font-poppins font-normal text-base leading-6 text-secondary">
+                <ul className="list-disc list-inside space-y-2 font-poppins font-normal text-base leading-6 text-charcoal">
                 <li>Lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
                 <li>Quisque faucibus ex sapien vitae pellentesque sem placerat.</li>
                 <li>In id cursus mi pretium tellus duis convallis.</li>
@@ -344,10 +344,10 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                 </div>
                 </div>
                 <div className="md:w-1/2">
-                <h3 className="font-poppins font-semibold text-[22px] md:text-2xl leading-8 text-secondary mb-4">
+                <h3 className="font-poppins font-semibold text-[22px] md:text-2xl leading-8 text-charcoal mb-4">
                     Heading is over here
                 </h3>
-                <p className="font-poppins font-normal text-base leading-6 text-secondary">
+                <p className="font-poppins font-normal text-base leading-6 text-charcoal">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus eu sapien vitae scelerisque. Cras vulputate nunc sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum rhoncus. Vivamus quis ligula id enim porta consectetur quis vitae lacus. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
                 </p>
                 </div>
