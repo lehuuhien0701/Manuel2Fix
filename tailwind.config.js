@@ -23,7 +23,7 @@ export default {
       colors: {
         primary: '#228EA9',
         secondary: '#FF5E00',
-        charcoal: '#272727',
+        charcoal: '#272727', 
         lightblue: '#F2F7F8',
         tan: '#F1EDE6'
       },
