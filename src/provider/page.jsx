@@ -1,44 +1,37 @@
 import { useState } from 'react';
- 
+import TabContent from '../components/TabContent'; 
+import TabButtons from '../components/TabButtons'; 
+import SkillsForm from '../components/SkillsForm';
+import JobTypesForm from '../components/JobTypesForm'; 
+import ProfileDetails from '../components/ProfileDetails'; 
+import Equipment from '../components/Equipment'; 
 
 
-const Provider = () => {
- 
 
-    // State to manage the active tab
+const ProfileTabs = () => {
+  // State to manage the active tab
   const [activeTab, setActiveTab] = useState('tab1');
 
   // Tab data
   const tabs = [
-    {
-      id: 'tab1',
-      label: 'Skills',
-      content: 'This is the content for the Skills tab.',
-    },
-    {
-      id: 'tab2',
-      label: 'Job types',
-      content: 'This is the content for the ob types tab.',
-    },
-    {
-      id: 'tab3',
-      label: 'Profile details',
-      content: 'This is the content for the Profile details tab.',
-    },
-    {
-      id: 'tab4',
-      label: 'Equipment',
-      content: 'This is the content for the Equipment tab.',
-    },
+    { id: 'tab1', label: 'Skills' },
+    { id: 'tab2', label: 'Job types' },
+    { id: 'tab3', label: 'Profile details' },
+    { id: 'tab4', label: 'Equipment' },
   ];
 
   const handleTabClick = (tabId) => {
-    setActiveTab(tabId);
+    setActiveTab(tabId); 
   };
-
   
 
 
+  
+
+ 
+      
+
+ 
   
   return (
 
@@ -429,118 +422,20 @@ const Provider = () => {
         <div className="flex flex-col lg:flex-row gap-10 lg:space-y-0">
           {/* Left: Tab Buttons */}
           <div className="w-full lg:w-3/12 flex flex-col space-y-4 bg-[#F7F9F9] p-6 rounded-xl">
-            {tabs.map((tab) => (
-              <button
-                key={tab.id}
-                onClick={() => handleTabClick(tab.id)}
-                className={`
-                  poppins text-[16px] leading-[24px] font-semibold rounded-md p-4 text-left
-                  ${activeTab === tab.id ? 'bg-[#E3EFF2] text-primary' : 'bg-white text-primary'}
-                `}
-              >
-                {tab.label}
-              </button>
-            ))}
+               <TabButtons tabs={tabs} activeTab={activeTab} handleTabClick={handleTabClick} />
           </div>
 
           {/* Right: Tab Content */}
           <div className="w-full lg:w-9/12 bg-white">
-            {tabs.map((tab) => (
-              <div
-                key={tab.id}
-                className={`tab-content ${activeTab === tab.id ? 'block' : 'hidden'}`}
-              >
+             <TabContent activeTab={activeTab}>
+                {activeTab === 'tab1' && <SkillsForm />} 
+                {activeTab === 'tab2' && <JobTypesForm />}
+                {activeTab === 'tab3' && <ProfileDetails />} 
+                {activeTab === 'tab4' && <Equipment />} 
+                
 
                 
-                {/* Sử dụng component thay vì viết HTML trực tiếp */}
-                {tab.id === 1 && <Tab1Content />}
-                {tab.id === 2 && <Tab2Content />}
-                {/* Thêm các tab khác nếu cần */}
-                {tab.id === 3 && <Tab3Content />}
-                
-                <div className="">
-                    <h2 className="text-2xl font-semibold text-gray-800 mb-6">Skills</h2>
-                    
-                    {/* Sub-category & Name of Service */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                        <div>
-                        <label htmlFor="sub-category" className="block text-sm font-medium text-gray-700 mb-1">
-                            Select a sub-category
-                        </label>
-                        <select 
-                            id="sub-category" 
-                            name="sub-category" 
-                            className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
-                        >
-                            <option>Sub-category</option>
-                        </select>
-                        </div>
-                        <div>
-                        <label htmlFor="service-name" className="block text-sm font-medium text-gray-700 mb-1">
-                            Name of the service
-                        </label>
-                        <input 
-                            type="text" 
-                            id="service-name" 
-                            name="service-name" 
-                            placeholder="Address" 
-                            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                        />
-                        </div>
-                    </div>
-                    
-                    {/* Banner Image Upload */}
-                    <div className="mb-6">
-                        <label className="block text-sm font-medium text-gray-700 mb-1">
-                        Banner image
-                        </label>
-                        <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
-                        <div className="space-y-1 text-center">
-                            <svg className="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true">
-                            <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                            <div className="flex text-sm text-gray-600">
-                            <label htmlFor="file-upload" className="relative cursor-pointer bg-white rounded-md font-medium text-blue-500 hover:text-blue-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-blue-500">
-                                <span>Click to upload</span>
-                                <input id="file-upload" name="file-upload" type="file" className="sr-only" />
-                            </label>
-                            <p className="pl-1">or drag and drop your files here</p>
-                            </div>
-                            <p className="text-xs text-gray-500">
-                            PDF, PNG, or JPG (max 100mb)
-                            </p>
-                        </div>
-                        </div>
-                    </div>
-                    
-                    {/* Tarif per hour */}
-                    <div className="mb-6">
-                        <label htmlFor="tariff" className="block text-sm font-medium text-gray-700 mb-1">
-                        Tarif per hour (EUR)
-                        </label>
-                        <select 
-                        id="tariff" 
-                        name="tariff" 
-                        className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
-                        >
-                        <option>Sub-category</option>
-                        </select>
-                    </div>
-
-                    {/* Next Button */}
-                    <div className="text-right">
-                        <button 
-                        type="submit" 
-                        className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-                        >
-                        Next
-                        </button>
-                    </div>
-                </div>    
-
-
-              </div>
-            ))}
+            </TabContent>
           </div>
         </div>
       </div>
@@ -552,5 +447,4 @@ const Provider = () => {
 </>
 );
 }; 
-
-export default Provider;           
+export default ProfileTabs;         
