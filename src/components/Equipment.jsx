@@ -28,7 +28,7 @@ const RadioEquipmentList = () => {
   return (
     <div className="">
         <h2 className="text-2xl font-semibold text-gray-800 mb-10 pb-8 border-b border-[#D9D9D9]">Job types</h2>
-        <div className='mb-10 pb-10 border-b border-[#D9D9D9]'>
+        <div className='min-h-[600px]'>
         {categories.map((category) => (
           <label 
             key={category.id} 
@@ -40,13 +40,13 @@ const RadioEquipmentList = () => {
               value={category.id}
               checked={selectedCategory === category.id}
               onChange={handleRadioChange}
-              className="mr-1 w-5 h-5 accent-[#228EA9]"
+              className="mr-1 w-[18px] h-[18px] accent-[#228EA9]"
             />
-            <span className="text-gray-700">{category.label}</span>
+            <span className="font-medium text-base leading-6 text-neutral-700 inline-block align-text-bottom">{category.label}</span>
           </label>
         ))}
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between mt-10 pt-10 border-t border-[#D9D9D9] gap-8">
             <button 
             type="text" 
             className="border border-primary w-full sm:w-auto bg-transparent hover:bg-charcoal text-primary font-semibold text-[16px] py-[11px] px-7 rounded-[6px]"
@@ -57,7 +57,7 @@ const RadioEquipmentList = () => {
             type="submit" 
             className="w-full sm:w-auto bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-7 rounded-[6px]"
             >
-            Next
+            Save
             </button>
         </div>
     </div> 

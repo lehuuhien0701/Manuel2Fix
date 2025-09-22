@@ -91,7 +91,7 @@ const ProfileDetails = () => {
         </div> 
 
         {/* Next Button */}
-        <div className="flex justify-between">
+        <div className="flex justify-between mt-10 pt-10 border-t border-[#D9D9D9]">
             <button 
             type="text" 
             className="border border-primary w-full sm:w-auto bg-transparent hover:bg-charcoal text-primary font-semibold text-[16px] py-[11px] px-7 rounded-[6px]"

@@ -45,7 +45,7 @@ const SkillsForm = () => {
                 <rect x="0.6" y="0.6" width="46.8" height="46.8" rx="9" stroke="#272727" stroke-width="1.2"/>
                 <path d="M33 27V28.2C33 29.8802 33 30.7202 32.673 31.362C32.3854 31.9265 31.9265 32.3854 31.362 32.673C30.7202 33 29.8802 33 28.2 33H19.8C18.1198 33 17.2798 33 16.638 32.673C16.0735 32.3854 15.6146 31.9265 15.327 31.362C15 30.7202 15 29.8802 15 28.2V27M29 20L24 15M24 15L19 20M24 15V27" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg> 
-                <div className="flex text-sm text-gray-600">
+                <div className="md:flex text-sm text-gray-600">
                 <label htmlFor="file-upload" className="relative cursor-pointer focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-blue-500 font-medium text-base leading-6 text-primary">
                     <span>Click to upload</span>
                     <input id="file-upload" name="file-upload" type="file" className="sr-only" />

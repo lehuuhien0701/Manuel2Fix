@@ -6,6 +6,8 @@ import JobTypesForm from '../components/JobTypesForm';
 import ProfileDetails from '../components/ProfileDetails'; 
 import Equipment from '../components/Equipment'; 
 
+import DatePickerComponent from '../DatePickerComponent.jsx';
+
 
 
 const ProfileTabs = () => {
@@ -418,15 +420,15 @@ const ProfileTabs = () => {
     </section>
 
     <section className="bg-gray-50 py-20 poppins">
-      <div className="mx-auto max-w-[1280px] w-full px-6">
-        <div className="flex flex-col lg:flex-row gap-10 lg:space-y-0">
-          {/* Left: Tab Buttons */}
-          <div className="w-full lg:w-3/12 flex flex-col space-y-4 bg-[#F7F9F9] p-6 rounded-xl">
+      <div className="mx-auto max-w-[1280px] w-full md:px-6">
+        <div className="flex flex-col md:flex-row gap-10 lg:space-y-0">
+         
+          <div className="w-full md:w-[288px] flex flex-col space-y-4 bg-[#F7F9F9] p-6 rounded-xl">
                <TabButtons tabs={tabs} activeTab={activeTab} handleTabClick={handleTabClick} />
           </div>
 
-          {/* Right: Tab Content */}
-          <div className="w-full lg:w-9/12 bg-white">
+           
+          <div className="w-full md:w-9/12 bg-white px-6 md:px-0">
              <TabContent activeTab={activeTab}>
                 {activeTab === 'tab1' && <SkillsForm />} 
                 {activeTab === 'tab2' && <JobTypesForm />}
@@ -439,6 +441,224 @@ const ProfileTabs = () => {
           </div>
         </div>
       </div>
+    </section>
+
+
+    <section className="relative bg-white py-16 pb-10 sm:py-16 px-4 sm:px-6 lg:px-8 shadow-[0px_0px_30px_rgba(0,0,0,0.08)]">
+        <div className="absolute top-90px left-0"> 
+            <img 
+                src="/v2-bg-dot.svg" 
+                alt=""
+                className=""
+            /> 
+            </div> 
+            <div className="relative z-10 text-center mb-12">
+            <h2 className="font-poppins font-semibold text-[40px] leading-[45px] md:text-[45px] md:leading-[55px] lg:text-[65px] lg:leading-[78px] text-center text-charcoal">
+            My request details
+            </h2>
+        </div>
+
+        <div className="max-w-[983px] m-auto relative z-10 sm:flex sm:flex-row gap-8 lg:gap-15 items-start">
+            <div className="w-12/12 sm:w-5/12">
+            <img
+                src="../img24.jpg"  
+                alt="Service thumbnail"
+                className="w-full h-auto rounded-xl"
+            />
+            </div>
+
+            <div className="mt-6 sm:mt-0 w-12/12 sm:w-7/12">
+                <h3 className="font-poppins font-semibold text-base leading-6 text-charcoal pb-4 border-b border-[#D9D9D9] mb-4">
+                Gardening
+            </h3>
+
+                <div className="flex justify-between items-start mb-3">
+                <h4 className="font-poppins font-semibold text-2xl leading-8 text-charcoal">
+                Mowing the lawn
+                </h4>
+                <span className="font-poppins font-semibold text-2xl leading-8 text-charcoal">
+                14EUR p/h
+                </span>
+            </div>
+
+                <p className="font-poppins font-normal text-base leading-6 text-charcoal mb-6">
+                Description is here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+            </p>
+
+                <div className="flex flex-wrap">
+                <span className="flex items-center space-x-2 font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-2 rounded-[999px] mr-2 mb-4">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.75 2V6M16.75 2V6M3.75 10H21.75M5.75 4H19.75C20.8546 4 21.75 4.89543 21.75 6V20C21.75 21.1046 20.8546 22 19.75 22H5.75C4.64543 22 3.75 21.1046 3.75 20V6C3.75 4.89543 4.64543 4 5.75 4Z" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+                <span>02/11/2025</span>
+                </span>
+                
+                <span className="flex items-center space-x-2 font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-2 rounded-[999px] mr-2 mb-4">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.75 2H14.75M12.75 14L15.75 11M20.75 14C20.75 18.4183 17.1683 22 12.75 22C8.33172 22 4.75 18.4183 4.75 14C4.75 9.58172 8.33172 6 12.75 6C17.1683 6 20.75 9.58172 20.75 14Z" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+                <span>10:00-12:00am (2 hours)</span>
+                </span>
+
+                <span className="flex items-center space-x-2 font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-2 rounded-[999px] mr-2 mb-4">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.75 13C14.4069 13 15.75 11.6569 15.75 10C15.75 8.34315 14.4069 7 12.75 7C11.0931 7 9.75 8.34315 9.75 10C9.75 11.6569 11.0931 13 12.75 13Z" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12.75 22C16.75 18 20.75 14.4183 20.75 10C20.75 5.58172 17.1683 2 12.75 2C8.33172 2 4.75 5.58172 4.75 10C4.75 14.4183 8.75 18 12.75 22Z" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+                <span>Luxembourg, 12345</span>
+                </span>
+            </div>
+            </div>
+        </div>
+    </section> 
+    <section className="bg-[#F7F9F9] py-16 sm:px-4 sm:px-6 lg:px-8">
+        <div className="text-center max-w-2xl mx-auto mb-[45px]">
+            <h2 className="font-poppins font-semibold text-[34px] leading-[40px] md:text-[40px] md:leading-[50px] text-center text-charcoal">
+            Public chat
+            </h2>
+        </div>
+
+        <div className="container mx-auto border-t border-[#D9D9D9] pt-[40px]">
+            <div className="flex items-end space-x-4 mb-6">
+                <div className="w-[47px] h-[47px] sm:w-[72px] sm:h-[72px] bg-[#D9D9D9] rounded-full flex-shrink-0"></div>
+            
+                <div className="flex-1"> 
+                <div className="bg-white px-4 py-5 rounded-xl shadow-sm max-w-2xl">
+                <div className="flex items-center space-x-2 mb-2 font-poppins font-medium text-base leading-6 text-charcoal">
+                    <p className=" ">
+                    Name Surname
+                    </p>
+                    <span className=" ">
+                    09:34am
+                    </span>
+                </div>
+                <p className="font-poppins font-normal text-base leading-6 text-charcoal">
+                    Comment is over here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                </div>
+            </div>
+            </div>
+
+            <div className="flex items-end justify-end space-x-4 mb-8">
+                <div className="flex-1 flex justify-end">
+                <div className="bg-[#E3EFF2] p-4 rounded-xl shadow-sm max-w-2xl">
+                    <div className="flex items-center space-x-2 mb-2 font-poppins font-medium text-base leading-6 text-charcoal">
+                    <span className="">
+                        09:34am
+                    </span>
+                    </div>  
+                    <p className="font-poppins font-normal text-base leading-6 text-charcoal">
+                    Comment is over here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                </div>
+            
+                <div className="w-[47px] h-[47px] sm:w-[72px] sm:h-[72px] bg-[#D9D9D9] rounded-full flex-shrink-0"></div>
+            </div>
+        
+            <div className="flex items-end space-x-4">
+                <div className="w-[47px] h-[47px] sm:w-[72px] sm:h-[72px] bg-[#D9D9D9] rounded-full flex-shrink-0"></div>
+                
+                <div className="flex-1"> 
+                <div className="bg-white p-4 rounded-xl shadow-sm max-w-2xl">
+                    <div className="flex items-center space-x-2 mb-2 font-poppins font-medium text-base leading-6 text-charcoal">
+                    <p className="">
+                        Name Surname
+                    </p>
+                    <span className="">
+                        09:34am
+                    </span>
+                    </div>  
+                    <p className="font-poppins font-normal text-base leading-6 text-charcoal"> 
+                    Comment is over here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section className="bg-[#F1EDE6] shadow-[10px_16px_0px_#272727] relative overflow-hidden mb-5">
+        <article className="mx-auto py-15 sm:py-20 container"> 
+            <div className="flex justify-between items-center mb-10">
+                <h2 className="text-center w-full font-semibold text-[34px] leading-[44px] sm:text-[40px] sm:leading-[50px] text-charcoal">Offers / Quotes</h2>                       
+            </div> 
+            <div className='rounded-xl bg-white max-w-1280px m-auto px-15 py-11'>
+                <h3 className='font-semibold text-xl leading-8 text-charcoal mb-6'>Intervention details</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pb-10 mb-10 border-b border-[#D9D9D9]">
+                    <div>
+                        <label htmlFor="sub-category" className="block font-medium text-base leading-6 text-neutral-700 mb-1">
+                            Date of the intervention
+                        </label>
+                        <div className="relative">
+                            <DatePickerComponent /> 
+                             
+                        </div>
+                    </div>
+                    <div>
+                        <label htmlFor="time-of-the-intervention" className="block font-medium text-base leading-6 text-neutral-700 mb-1">
+                            Time of the intervention
+                        </label>
+                        <input 
+                            type="text" 
+                            id="time-of-the-intervention" 
+                            name="time-of-the-intervention" 
+                            placeholder="" 
+                            className="mt-1 block w-full px-4 py-[11.5px] border border-[#D9D9D9] rounded-[6px] focus:outline-none focus:ring-2 focus:ring-custom-blue"
+                        />
+                    </div>
+                </div>
+                <h3 className='font-semibold text-xl leading-8 text-charcoal mb-6'>Number of hours needed</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pb-10 mb-10 border-b border-[#D9D9D9]">
+                     
+                    <div>
+                        <label htmlFor="number-of-hours" className="block font-medium text-base leading-6 text-neutral-700 mb-1">
+                            Number of hours
+                        </label>
+                        <input 
+                            type="text" 
+                            id="number-of-hours" 
+                            name="number-of-hours" 
+                            placeholder="4 hours" 
+                            className="mt-1 block w-full px-4 py-[11.5px] border border-[#D9D9D9] rounded-[6px] focus:outline-none focus:ring-2 focus:ring-custom-blue"
+                        />
+                    </div>
+                </div>
+
+                <h3 className='font-semibold text-xl leading-8 text-charcoal mb-6'>Hourly</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pb-10 mb-10 border-b border-[#D9D9D9]">
+                     
+                    <div>
+                        <label htmlFor="tarif-per-hour" className="block font-medium text-base leading-6 text-neutral-700 mb-1">                            
+                            Tarif per hour
+                        </label>
+                        <input 
+                            type="text" 
+                            id="tarif-per-hour" 
+                            name="tarif-per-hour" 
+                            placeholder="110 EUR" 
+                            className="mt-1 block w-full px-4 py-[11.5px] border border-[#D9D9D9] rounded-[6px] focus:outline-none focus:ring-2 focus:ring-custom-blue"
+                        />
+                    </div>
+                </div>
+
+                <div className="sm:flex justify-end gap-6">
+                    <button 
+                    type="text" 
+                    className="mb-6 sm:mb-0 border border-primary w-full sm:w-auto bg-transparent hover:bg-charcoal text-primary font-semibold text-[16px] py-[11px] px-7 rounded-[6px]"
+                    >
+                    View quote details
+                    </button>
+                    <button 
+                    type="submit" 
+                    className="w-full sm:w-auto bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-7 rounded-[6px]"
+                    >
+                    Save
+                    </button>
+                </div>
+
+            </div>
+        </article>
     </section>
 
 

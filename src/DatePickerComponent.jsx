@@ -7,10 +7,8 @@ const DatePickerComponent = () => {
 
   return (
     <div>
-      <label className="block mb-1 font-poppins font-medium text-base leading-6 text-secondary">
-        Select a day in the calendar
-      </label>
-      <div className="relative w-[238px]">
+      
+      <div className="relative w-[100%]"> 
         <DatePicker
           selected={selectedDate}
           onChange={(date) => setSelectedDate(date)}

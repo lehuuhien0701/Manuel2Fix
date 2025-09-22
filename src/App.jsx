@@ -713,7 +713,9 @@ const [activeTab, setActiveTab] = useState(faqsData[0].id);
                         <label className="block text-xl md:text-[22px] font-semibold mb-6 leading-8">
                           Which day is best for you?
                         </label>
-                        
+                        <label className="block mb-1 font-poppins font-medium text-base leading-6 text-secondary">
+                          Select a day in the calendar
+                        </label>
 
                         <DatePickerComponent /> 
                         
@@ -2253,7 +2255,7 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
               <section className='max-w-[1280px] m-auto px-6 pt-4'>
                 <div className="bg-white pb-2 pt-10 px-6 md:py-16 sm:px-6 lg:p-16 shadow-[0px_0px_30px_rgba(0,0,0,0.08)] mb-24">
                   <div className="text-center mb-12">
-                    <h2 className="font-poppins font-semibold text-[34px] leading-[44px] md:text-[40px] md:leading-[50px] text-center text-[#272727]">
+                    <h2 className="font-poppins font-semibold text-[34px] leading-[44px] md:text-[40px] md:leading-[50px] text-center text-charcoal">
                       Advantages to request a service on Manual2Fix
                     </h2>
                   </div>

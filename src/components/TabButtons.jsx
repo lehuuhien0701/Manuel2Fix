@@ -2,22 +2,22 @@ import PropTypes from 'prop-types';
 
 const TabButtons = ({ tabs, activeTab, handleTabClick }) => {
   return (
-    <div className="flex flex-col space-y-2">
+    <div className="md:flex md:flex-col space-y-2 overflow-x-auto whitespace-nowrap md:overflow-x-visible md:whitespace-nowrap">
       {tabs.map((tab) => (
         <button
-          key={tab.id}
-          onClick={() => handleTabClick(tab.id)}
-          className={`
-            font-medium w-full px-4 py-3 text-left rounded-lg transition-all
-            ${
-              activeTab === tab.id
-                ? 'bg-[#E3EFF2] text-primary shadow-sm'
-                : 'text-gray-500 hover:bg-white hover:text-primary'
-            }
-          `}
-        >
-          {tab.label}
-        </button>
+  key={tab.id}
+  onClick={() => handleTabClick(tab.id)}
+  className={`
+    mr-3 md:mr-0 font-medium md:w-full px-4 py-3 text-left rounded-lg transition-all
+    ${
+      activeTab === tab.id
+        ? 'bg-[#E3EFF2] text-primary'
+        : 'bg-white text-gray-500 hover:text-primary'
+    }
+  `}
+>
+  {tab.label}
+</button>
       ))}
     </div>
   );

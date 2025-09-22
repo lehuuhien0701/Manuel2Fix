@@ -8,5 +8,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
+.react-datepicker-wrapper {
+  @apply w-full;
+}
  
