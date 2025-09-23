@@ -24,14 +24,10 @@ const ProfileTabs = () => {
 
   const handleTabClick = (tabId) => {
     setActiveTab(tabId); 
-  };
-  
+  }; 
 
-
-  
 
  
-      
 
  
   
@@ -39,6 +35,78 @@ const ProfileTabs = () => {
 
 <>
 
+    <section>
+        <div className='flex items-center justify-center pb-14 sm:pb-10 px-6 relative'>    
+            <div>
+                <div className="max-w-[1280px] w-full m-auto relative">
+                    <div className="flex flex-col md:flex-row justify-between space-y-12 lg:space-y-0 lg:space-x-12">
+                    
+                        <div className="w-full md:w-5/12 relative z-40 mt-32 md:pr-9 lg:pr-0">
+                            <h1 className="poppins text-[40px] leading-[45px] md:text-[45px] md:leading-[55px] lg:text-[65px] lg:leading-[78px] font-semibold text-gray-900 text-center md:text-left mb-4">
+                                Find the ideal home service provider
+                            </h1>
+                            <p className='font-medium text-base leading-6 text-charcoal'>Attract new clients, boost your visibility and start increasing your earnings today.</p>
+                        </div>
+        
+                        <div className="relative w-full md:w-7/12 flex justify-end">
+                            <div className="relative bg-gray-100 rounded-lg md:rounded-2xl overflow-hidden z-10 m-auto"> 
+                                <img src="banner-img01.png" alt="Main Thumbnail" className="w-[254px] :h-[306px] md:w-[401px] md:h-[483px] lg:w-[575px] lg:h-[692px] object-cover"/>
+                            </div>
+
+                        
+                            <div className="absolute bottom-0 md:bottom-auto md:top-[350px] left-10 w-[130px] h-[86px] md:w-[239px] md:h-[200px] lg:w-[434px] lg:h-[286px] z-40">
+                                <img src="banner-img04.png" alt="Absolute Thumbnail 1" className="w-full h-full object-cover rounded-lg md:rounded-2xl"/>
+                            </div>
+                            
+                            <div className="absolute top-[150px] left-[-10px] sm:left-[-35px] w-[105px] h-[109px] md:w-[221px] md:h-[287px] lg:w-[239px] lg:h-[248px] z-30">
+                                <img src="banner-img02a.png" alt="Absolute Thumbnail 2" className="w-full h-full object-cover rounded-lg md:rounded-2xl"/>
+                            </div>
+
+                            <div className="absolute top-12 right-0 w-[133px] h-[126px] md:w-[189px] md:h-[200px] lg:w-[301px] lg:h-[286px] z-40">
+                                <img src="banner-img03.png" alt="Absolute Thumbnail 2" className="w-full h-full object-cover rounded-lg md:rounded-2xl"/>
+                            </div>
+                            <div className="absolute top-[150px] md:top-[280px] right-[20px] w-[88px] h-[60px] sm:w-[103px] sm:h-[103px] z-40">
+                                <img src="banner-img05.png" alt="Absolute Thumbnail 2" className="w-full h-full object-cover rounded-lg md:rounded-2xl"/>
+                            </div>
+                            <img src="sign-up-img-dot01.svg" alt="" className="w-[200px] h-[200px] md:w-[334px] md:h-[421px] object-cover absolute bottom-0 top-auto sm:top-0 left-0"/>
+                            
+                        </div>
+                    </div>  
+                </div>
+                <div 
+                    className="min-h-[350px] md:min-h-0 absolute z-10 left-0 right-0 bottom-[40px] sm:pt-10 pb-20 md:pt-16 md:pb-32 overflow-hidden bg-custom-blue" 
+                    style={{ backgroundImage: "url('/banner03-s.svg')", backgroundRepeat: "no-repeat", backgroundPosition: "top center", backgroundSize: "cover" }}
+                > 
+                
+                </div>
+                <div className="relative z-40 md:max-w-[353px] lg:max-w-[795px] px-6 md:px-8 py-5 bg-white rounded-xl shadow-lg mt-[20px] md:mt-[-100px]">
+                    <div className='lg:flex items-center'>
+                        <div className='w-full lg:w-[197px] pb-5 mb-5 border-b border-[#D9D9D9] lg:pb-0 lg:mb-0 lg:border-b-0 lg:pr-8 lg:mr-8 lg:border-r lg:border-[#D9D9D9]'>
+                            <p className="font-poppins font-semibold text-lg leading-7 text-charcoal text-center mb-2">
+                                Request a service
+                            </p>
+                            <button className="w-full flex-shrink-0 text-center py-[12px] bg-[#228EA9] text-white rounded-md font-poppins font-medium text-base">
+                                Request
+                            </button>
+                        </div>
+                        <div className='flex-grow'>
+                            <p className="font-poppins font-semibold text-lg leading-7 text-charcoal text-center lg:text-left mb-2">
+                                Search for a service
+                            </p>
+                            <div className='md:flex items-center justify-between'>
+                                <input
+                                    type="text"
+                                    placeholder="Search"
+                                    className="mb-4 md:mb-0 border border-[#D9D9D9] rounded-lg w-full py-3 px-4 font-poppins font-normal text-base leading-6 text-charcoal focus:outline-none"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>  
+    </section>
     <section>
         <div className='flex items-center justify-center pb-14 sm:pb-10 px-6 relative'>    
             <div className="max-w-[1280px] w-full m-auto relative z-10">
@@ -419,7 +487,7 @@ const ProfileTabs = () => {
         </div>
     </section>
 
-    <section className="bg-gray-50 py-20 poppins">
+    <section className="bg-white py-20 poppins"> 
       <div className="mx-auto max-w-[1280px] w-full md:px-6">
         <div className="flex flex-col md:flex-row gap-10 lg:space-y-0">
          
@@ -658,6 +726,12 @@ const ProfileTabs = () => {
                 </div>
 
             </div>
+
+
+            <div className='rounded-xl bg-white max-w-1280px m-auto px-15 py-11 mt-10'>
+
+            </div>
+
         </article>
     </section>
 
@@ -667,4 +741,4 @@ const ProfileTabs = () => {
 </>
 );
 }; 
-export default ProfileTabs;         
+export default ProfileTabs;             
