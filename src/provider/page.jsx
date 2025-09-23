@@ -113,9 +113,13 @@ const ProfileTabs = () => {
                 <div className="flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 lg:space-x-12">
                 
                     <div className="w-full lg:w-5/12 flex items-center justify-center lg:justify-start relative z-10">
-                        <h1 className="poppins text-[40px] leading-[45px] md:text-[45px] md:leading-[55px] lg:text-[65px] lg:leading-[78px] font-semibold text-gray-900 text-center md:text-left">
-                            Welcome to Manuel2Fix
-                        </h1>
+                        <div>
+                            <h1 className="mb-5 poppins text-[40px] leading-[45px] md:text-[45px] md:leading-[55px] lg:text-[65px] lg:leading-[78px] font-semibold text-gray-900 text-center md:text-left">
+                                Welcome to Manuel2Fix
+                            </h1>
+                            <p className='font-medium text-base leading-6 text-charcoal'>Short description is over here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <button className="mt-4 bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-9 rounded-[6px] w-full sm:w-auto">Request this service</button>
+                        </div>
                     </div>
     
                     <div className="relative w-full lg:w-7/12 flex justify-end">
