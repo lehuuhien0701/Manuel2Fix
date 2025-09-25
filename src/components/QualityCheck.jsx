@@ -30,7 +30,7 @@ const Validation = () => {
             <input
               type="radio"
               id="radio-option-2"
-              name="radio-group"
+              name="radio-group2"
               className="peer hidden"
             />
             <div className="custom-radio-button mr-[10px] relative"></div>
@@ -43,7 +43,7 @@ const Validation = () => {
             <input
               type="radio"
               id="radio-option-3"
-              name="radio-group"
+              name="radio-group2"
               className="peer hidden"
             />
             <div className="custom-radio-button mr-[10px] relative"></div>
@@ -59,7 +59,7 @@ const Validation = () => {
             <input
               type="radio"
               id="radio-option-4"
-              name="radio-group"
+              name="radio-group4"
               className="peer hidden"
             />
             <div className="custom-radio-button mr-[10px] relative"></div>
@@ -72,7 +72,7 @@ const Validation = () => {
             <input
               type="radio"
               id="radio-option-5"
-              name="radio-group"
+              name="radio-group4"
               className="peer hidden"
             />
             <div className="custom-radio-button mr-[10px] relative"></div>
@@ -88,7 +88,7 @@ const Validation = () => {
             <input
               type="radio"
               id="radio-option-6"
-              name="radio-group"
+              name="radio-group6"
               className="peer hidden"
             />
             <div className="custom-radio-button mr-[10px] relative"></div>
@@ -101,7 +101,7 @@ const Validation = () => {
             <input
               type="radio"
               id="radio-option-7"
-              name="radio-group"
+              name="radio-group6"
               className="peer hidden"
             />
             <div className="custom-radio-button mr-[10px] relative"></div>
@@ -117,7 +117,7 @@ const Validation = () => {
             <input
               type="radio"
               id="radio-option-8"
-              name="radio-group"
+              name="radio-group8"
               className="peer hidden"
             />
             <div className="custom-radio-button mr-[10px] relative"></div>
@@ -130,7 +130,7 @@ const Validation = () => {
             <input
               type="radio"
               id="radio-option-9"
-              name="radio-group"
+              name="radio-group8"
               className="peer hidden"
             />
             <div className="custom-radio-button mr-[10px] relative"></div>

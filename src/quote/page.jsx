@@ -48,8 +48,8 @@ const ProfileTabs = () => {
                 <h2 className="text-center w-full font-semibold text-[34px] leading-[44px] sm:text-[40px] sm:leading-[50px] text-charcoal">Offers / Quotes</h2>                       
             </div> 
             <div className='px-6'>    
-                <div className='rounded-xl bg-white py-6 sm:py-20 container px-6 xl:px-20 mx-auto'>
-                    <h3 className='font-semibold text-xl leading-8 text-charcoal mb-6'>Intervention details</h3>
+                <div className='rounded-xl bg-white py-6 sm:py-11 container px-6 xl:px-15 mx-auto'>
+                    <h3 className='font-semibold text-[22px] leading-8 text-charcoal mb-6'>Intervention details</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pb-10 mb-10 border-b border-[#D9D9D9]">
                         <div>
                             <label htmlFor="sub-category" className="block font-medium text-base leading-6 text-neutral-700 mb-1">
@@ -126,7 +126,7 @@ const ProfileTabs = () => {
             </div>
 
             <div className='px-6'>
-                <div className='rounded-xl bg-white py-6 sm:py-20 container px-6 xl:px-20 mx-auto mt-10'>
+                <div className='rounded-xl bg-white py-6 sm:py-11 container px-6 xl:px-20 mx-auto mt-10'>
                     <div className="lg:space-y-0"> 
                         <div className="w-full flex flex-col space-y-4">
                             <TabButtonQuote tabs={tabs} activeTab={activeTab} handleTabClick={handleTabClick} /> 
