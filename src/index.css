@@ -12,4 +12,37 @@
 .react-datepicker-wrapper {
   @apply w-full;
 }
+@layer components {
+  .custom-radio-button {
+    @apply relative h-[16px] w-[16px] rounded-full border-2 border-gray-400 flex items-center justify-center transition-all duration-200;
+  }
+  .custom-radio-button::before {
+    content: '';
+    @apply h-2.5 w-2.5 rounded-full bg-transparent transition-all duration-200;
+  }
+  .peer:checked + .custom-radio-button {
+    @apply border-[#228EA9];
+  }
+  .peer:checked + .custom-radio-button::before {
+    @apply bg-[#228EA9];
+  }
+}
+
+
+
  
+.container {
+    @apply mx-auto;
+}
+
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+@media (max-width: 1535px) {
+    .container {
+        max-width: 100%;
+    }
+}

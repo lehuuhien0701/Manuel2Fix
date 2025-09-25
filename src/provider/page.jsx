@@ -492,7 +492,7 @@ const ProfileTabs = () => {
     </section>
 
     <section className="bg-white py-20 poppins"> 
-      <div className="mx-auto max-w-[1280px] w-full md:px-6">
+      <div className="mx-auto py-15 sm:py-20 px-0 xl:px-20 container w-full">
         <div className="flex flex-col md:flex-row gap-10 lg:space-y-0">
          
           <div className="w-full md:w-[288px] flex flex-col space-y-4 bg-[#F7F9F9] p-6 rounded-xl">
@@ -505,10 +505,7 @@ const ProfileTabs = () => {
                 {activeTab === 'tab1' && <SkillsForm />} 
                 {activeTab === 'tab2' && <JobTypesForm />}
                 {activeTab === 'tab3' && <ProfileDetails />} 
-                {activeTab === 'tab4' && <Equipment />} 
-                
-
-                
+                {activeTab === 'tab4' && <Equipment />}  
             </TabContent>
           </div>
         </div>
@@ -656,7 +653,7 @@ const ProfileTabs = () => {
                 <h2 className="text-center w-full font-semibold text-[34px] leading-[44px] sm:text-[40px] sm:leading-[50px] text-charcoal">Offers / Quotes</h2>                       
             </div> 
             <div className='rounded-xl bg-white max-w-1280px m-auto px-15 py-11'>
-                <h3 className='font-semibold text-xl leading-8 text-charcoal mb-6'>Intervention details</h3>
+                <h3 className='font-semibold text-[22px] leading-8 text-charcoal mb-6'>Intervention details</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pb-10 mb-10 border-b border-[#D9D9D9]">
                     <div>
                         <label htmlFor="sub-category" className="block font-medium text-base leading-6 text-neutral-700 mb-1">

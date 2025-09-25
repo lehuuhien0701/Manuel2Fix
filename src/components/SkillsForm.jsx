@@ -3,7 +3,7 @@ import React from 'react';
 const SkillsForm = () => {
   return (
     <div className="">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-10 pb-8 border-b border-[#D9D9D9]">Skills</h2>
+        <h2 className="text-[22px] leading-8 font-semibold text-gray-800 mb-10 pb-8 border-b border-[#D9D9D9]">Skills</h2>
         
         {/* Sub-category & Name of Service */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pb-10 mb-10 border-b border-[#D9D9D9]">

@@ -1,50 +1,94 @@
 import React, { useState } from 'react';
 
 const RadioEquipmentList = () => {
-  const [selectedCategory, setSelectedCategory] = useState('');
-
-  const categories = [
-    { id: 'cat1', label: 'Equipment item is here' },
-    { id: 'cat2', label: 'Equipment item is over here' },
-    { id: 'cat3', label: 'Equipment item' },
-    { id: 'cat4', label: 'Equipment item is here' },
-    { id: 'cat5', label: 'Equipment item is right over here' },
-    { id: 'cat6', label: 'Equipment item is here' },
-    { id: 'cat7', label: 'Equipment item is right over here' }, 
-    { id: 'cat8', label: 'Equipment item is here' },
-    { id: 'cat9', label: 'Equipment item is here' },
-    { id: 'cat10', label: 'Equipment item is here' },
-    { id: 'cat11', label: 'Equipment item' },
-    { id: 'cat12', label: 'Equipment item' },
-    { id: 'cat13', label: 'Equipment item' },
-    { id: 'cat14', label: 'Equipment item is here' },
-    { id: 'cat15', label: 'Equipment item is here' },
-  ];
-
-  const handleRadioChange = (event) => {
-    setSelectedCategory(event.target.value);
-  };
+  
 
   return (
     <div className="">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-10 pb-8 border-b border-[#D9D9D9]">Job types</h2>
+        <h2 className="text-[22px] leading-8 font-semibold text-gray-800 mb-10 pb-8 border-b border-[#D9D9D9]">Job types</h2>
         <div className='min-h-[600px]'>
-        {categories.map((category) => (
-          <label 
-            key={category.id} 
-            className="inline-block mb-3 mr-3 space-x-2 border border-[#D9D9D9] rounded-md px-4 py-[11px] cursor-pointer hover:bg-gray-50 transition-colors duration-200"
-          >
+        
+          
+     
+        <div className='flex flex-wrap gap-3'>
+          <div className="flex items-center border border-[#D9D9D9] rounded-md px-4 py-[11px] cursor-pointer">
             <input
               type="radio"
-              name="sub-category"
-              value={category.id}
-              checked={selectedCategory === category.id}
-              onChange={handleRadioChange}
-              className="mr-1 w-[18px] h-[18px] accent-[#228EA9]"
+              id="radio-option-1"
+              name="radio-group"
+              className="peer hidden"
             />
-            <span className="font-medium text-base leading-6 text-neutral-700 inline-block align-text-bottom">{category.label}</span>
-          </label>
-        ))}
+            <div className="custom-radio-button mr-[10px] relative"></div>
+            <label htmlFor="radio-option-1" className="font-medium text-base text-neutral-700 cursor-pointer">
+              Equipment item is here
+            </label>
+          </div>
+          <div className="flex items-center border border-[#D9D9D9] rounded-md px-4 py-[11px] cursor-pointer">
+            <input
+              type="radio"
+              id="radio-option-2"
+              name="radio-group"
+              className="peer hidden"
+            />
+            <div className="custom-radio-button mr-[10px] relative"></div>
+            <label htmlFor="radio-option-2" className="font-medium text-base text-neutral-700 cursor-pointer">
+              Equipment item is over here
+            </label>
+          </div>
+          <div className="flex items-center border border-[#D9D9D9] rounded-md px-4 py-[11px] cursor-pointer">
+            <input
+              type="radio"
+              id="radio-option-3"
+              name="radio-group"
+              className="peer hidden"
+            />
+            <div className="custom-radio-button mr-[10px] relative"></div>
+            <label htmlFor="radio-option-3" className="font-medium text-base text-neutral-700 cursor-pointer">
+              Equipment item
+            </label>
+          </div>
+
+
+          <div className="flex items-center border border-[#D9D9D9] rounded-md px-4 py-[11px] cursor-pointer">
+            <input
+              type="radio"
+              id="radio-option-4"
+              name="radio-group"
+              className="peer hidden"
+            />
+            <div className="custom-radio-button mr-[10px] relative"></div>
+            <label htmlFor="radio-option-4" className="font-medium text-base text-neutral-700 cursor-pointer">
+              Equipment item is here
+            </label>
+          </div>
+          <div className="flex items-center border border-[#D9D9D9] rounded-md px-4 py-[11px] cursor-pointer">
+            <input
+              type="radio"
+              id="radio-option-5"
+              name="radio-group"
+              className="peer hidden"
+            />
+            <div className="custom-radio-button mr-[10px] relative"></div>
+            <label htmlFor="radio-option-5" className="font-medium text-base text-neutral-700 cursor-pointer">
+              Equipment item is right over here
+            </label>
+          </div>
+          <div className="flex items-center border border-[#D9D9D9] rounded-md px-4 py-[11px] cursor-pointer">
+            <input
+              type="radio"
+              id="radio-option-6"
+              name="radio-group"
+              className="peer hidden"
+            />
+            <div className="custom-radio-button mr-[10px] relative"></div>
+            <label htmlFor="radio-option-6" className="font-medium text-base text-neutral-700 cursor-pointer">
+              Equipment item is here
+            </label>
+          </div>  
+        </div>
+
+
+
         </div>
         <div className="flex justify-between mt-10 pt-10 border-t border-[#D9D9D9] gap-8">
             <button 
