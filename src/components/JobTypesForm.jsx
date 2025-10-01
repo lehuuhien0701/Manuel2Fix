@@ -10,7 +10,7 @@ const RadioList = () => {
         <label htmlFor="sub-category" className="block font-medium text-base leading-6 text-neutral-700 mb-1">
                 Sub-categories
         </label>    
-        <div className='grid grid-cols-4 gap-3'>
+        <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3'>
           <div className="flex items-center border border-[#D9D9D9] rounded-md px-4 py-[11px] cursor-pointer">
             <input
               type="radio"
@@ -92,7 +92,7 @@ const RadioList = () => {
 
         </div>
         </div>
-        <div className="flex justify-between mt-10 pt-10 border-t border-[#D9D9D9]">
+        <div className="flex justify-between mt-10 pt-10 border-t border-[#D9D9D9] gap-8">
             <button 
             type="text" 
             className="border border-primary w-full sm:w-auto bg-transparent hover:bg-charcoal text-primary font-semibold text-[16px] py-[11px] px-7 rounded-[6px]"

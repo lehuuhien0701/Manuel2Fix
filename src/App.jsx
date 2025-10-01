@@ -5,6 +5,9 @@ import HelpCenterPage from './help-center/page.jsx';
 import Gardening from './gardening/page.jsx';
 import Provider from './provider/page.jsx';
 import Quote from './quote/page.jsx';
+import ClientDashboard from './client-dashboard/page.jsx';
+
+
 
 
 // Import component chứa trang đăng nhập của bạn (từ ảnh chụp màn hình ban đầu)
@@ -2373,6 +2376,7 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
            <Route path="/gardening" element={<Gardening />} /> 
            <Route path="/provider" element={<Provider />} /> 
            <Route path="/quote" element={<Quote />} />  
+           <Route path="/client-dashboard" element={<ClientDashboard />} />  
            
            
            
