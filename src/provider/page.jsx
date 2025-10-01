@@ -44,10 +44,10 @@ const ProfileTabs = () => {
                             <h1 className="poppins text-[35px] leading-[45px] md:text-[40px] md:leading-[50px] lg:text-[50px] lg:leading-[60px] font-semibold text-gray-900 text-center md:text-left mb-4">
                                 Your trusted home service partner in Luxembourg
                             </h1>
-                            <p className='font-medium text-base leading-6 text-charcoal'>Verified providers · Fast booking · Secure payments</p>
-                            <div className='mt-2'>
+                            <p className='text-center md:text-left font-medium text-base leading-6 text-charcoal'>Verified providers · Fast booking · Secure payments</p>
+                            <div className='mt-2 text-center md:text-left'>
                                 <button className="mt-4 bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-9 rounded-[6px] w-full sm:w-auto mr-6">Book a service</button>
-                                <button type="text" className="mb-6 sm:mb-0 border border-primary w-full sm:w-auto bg-transparent hover:bg-charcoal text-primary font-semibold text-[16px] py-[11px] px-7 rounded-[6px]">Become a provider</button>
+                                <button type="text" className="mt-4 mb-6 sm:mb-0 border border-primary w-full sm:w-auto bg-transparent hover:bg-charcoal text-primary font-semibold text-[16px] py-[11px] px-7 rounded-[6px]">Become a provider</button>
                             </div>
                         </div>
         
@@ -77,7 +77,7 @@ const ProfileTabs = () => {
                     </div>  
                 </div>
                 <div 
-                    className="min-h-[350px] md:min-h-0 absolute z-10 left-0 right-0 bottom-0 sm:pt-10 pb-20 md:pt-16 md:pb-32 overflow-hidden bg-custom-blue" 
+                    className="min-h-[50px] md:min-h-0 absolute z-10 left-0 right-0 bottom-0 sm:pt-10 pb-20 md:pt-16 md:pb-32 overflow-hidden bg-custom-blue" 
                     style={{ backgroundImage: "url('/banner02-s.svg')", backgroundRepeat: "no-repeat", backgroundPosition: "top center", backgroundSize: "cover" }}
                 > 
                 
@@ -199,31 +199,31 @@ const ProfileTabs = () => {
             <div className='max-w-[992px] m-auto relative z-10'>
                 <h2 className='font-semibold text-[40px] leading-[50px] text-center text-charcoal'>How it works</h2>
                 <div className='mt-12'>
-                    <div className='bg-[#FBF8F4] flex items-center justify-center rounded-xl mb-8'>
-                        <div className='w-[400px]'>
+                    <div className='bg-[#FBF8F4] flex-col md:flex-row md:flex items-center justify-center rounded-xl mb-8'>
+                        <div className='w-full md:w-[400px] md:mb-0'>
                             <img src="img25.jpg" alt="" className="w-full object-cover"/>
                         </div>
-                        <div className='w-[calc(100%-400px)] text-center px-6'>
+                        <div className='w-full md:w-[calc(100%-400px)] text-center py-6 md:px-0 px-6'> 
                             <img src="icon06.svg" alt="" className="object-cover block m-auto mb-6"/>
                             <h4 className='font-semibold text-xl leading-[26px] text-center text-charcoal'>Step 1</h4>
                             <h2 className='font-semibold text-3xl leading-10 text-center text-charcoal'>Choose a service</h2>
                         </div>
                     </div>
-                    <div className='bg-[#FBF8F4] flex items-center justify-center rounded-xl mb-8'> 
-                        <div className='w-[calc(100%-400px)] text-center px-6'>
+                    <div className='bg-[#FBF8F4] flex-col-reverse md:flex-row flex items-center justify-center rounded-xl mb-8'> 
+                        <div className='w-full md:w-[calc(100%-400px)] text-center py-6 md:px-0 px-6'>
                             <img src="icon07.svg" alt="" className="object-cover block m-auto mb-6"/>
                             <h4 className='font-semibold text-xl leading-[26px] text-center text-charcoal'>Step 2</h4>
                             <h2 className='font-semibold text-3xl leading-10 text-center text-charcoal'>Compare providers</h2>
                         </div>
-                        <div className='w-[400px]'>
+                        <div className='w-full md:w-[400px] md:mb-0'>
                             <img src="img26.jpg" alt="" className="w-full object-cover"/>
                         </div>
                     </div>
-                    <div className='bg-[#FBF8F4] flex items-center justify-center rounded-xl mb-8'>
-                        <div className='w-[400px]'>
+                    <div className='bg-[#FBF8F4] flex-col md:flex-row md:flex items-center justify-center rounded-xl mb-8'>
+                        <div className='w-full md:w-[400px] md:mb-0'>
                             <img src="img27.jpg" alt="" className="w-full object-cover"/>
                         </div>
-                        <div className='w-[calc(100%-400px)] text-center px-6'>
+                        <div className='w-full md:w-[calc(100%-400px)] text-center py-6 md:px-0 px-6'>
                             <img src="icon08.svg" alt="" className="object-cover block m-auto mb-6"/>
                             <h4 className='font-semibold text-xl leading-[26px] text-center text-charcoal'>Step 3</h4>
                             <h2 className='font-semibold text-3xl leading-10 text-center text-charcoal'>Book & pay securely</h2>
@@ -539,30 +539,33 @@ const ProfileTabs = () => {
     <section className="bg-[#F2F7F8]">
         <article className="mx-auto py-15 sm:py-20 container"> 
             <div className="flex justify-between items-center mb-10">
-                <h2 className="text-center w-full sm:w-auto sm:text-left font-semibold text-[34px] leading-[44px] sm:text-[40px] sm:leading-[50px] text-charcoal">Why people trust Manual2Fix</h2> 
-                <button className="hidden sm:block bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-8 rounded-[6px]"> 
+                <h2 className="text-center w-full md:w-auto sm:text-left font-semibold text-[34px] leading-[44px] sm:text-[40px] sm:leading-[50px] text-charcoal">Why people trust Manual2Fix</h2> 
+                <button className="hidden md:block bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-8 rounded-[6px]"> 
                 View all reviews
                 </button>
             </div>
             <div className='grid grid-cols-1 sm:grid-cols-3 gap-6'>
                 <div className='bg-[#E3EFF2] rounded-xl px-6 lg:px-14 py-12 flex items-center justify-center'>
                     <div>
-                    <h2 className='font-semibold text-[80px] leading-[90px] text-center text-charcoal'>4.85</h2>
+                    <h2 className='font-semibold text-[50px] leading-[60px] md:text-[80px] md:leading-[90px] text-center text-charcoal'>4.85</h2>
                     <p className='font-semibold text-[22px] leading-8 text-charcoal text-center'>Average rating</p>
                     </div>
                 </div>
                 <div className='bg-[#E3EFF2] rounded-xl px-6 lg:px-14 py-12 flex items-center justify-center'>
                     <div>
-                    <h2 className='font-semibold text-[80px] leading-[90px] text-center text-charcoal'>2000</h2>
+                    <h2 className='font-semibold text-[50px] leading-[60px] md:text-[80px] md:leading-[90px] text-center text-charcoal'>2000</h2>
                     <p className='font-semibold text-[22px] leading-8 text-charcoal text-center'>Happy customers</p>
                     </div>
                 </div>
                 <div className='bg-[#E3EFF2] rounded-xl px-6 lg:px-14 py-12 flex items-center justify-center'>
                     <div>
-                        <h2 className='font-semibold text-3xl leading-[38px] text-charcoal text-center'>Secure payments & verified providers</h2> 
+                        <h2 className='font-semibold text-[25px] leading-[30px] md:text-3xl md:leading-[38px] text-charcoal text-center'>Secure payments & verified providers</h2> 
                     </div>
                 </div>
-            </div>    
+            </div>  
+            <button className="block md:hidden m-auto mt-10 bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-8 rounded-[6px]"> 
+            View all reviews
+            </button>  
 
 
 
@@ -571,11 +574,11 @@ const ProfileTabs = () => {
 
     <section className='relative'> 
         <div className='px-6 max-w-[1090px] m-auto relative z-10'>
-            <div className='flex gap-15 items-center pb-12 pt-20'>
-                <div className='w-1/2'> 
+            <div className='md:flex gap-15 items-center pb-12 pt-12 md:pt-20'>
+                <div className='w-full md:w-1/2'> 
                     <img src="img-mobile01.png" alt="" className=""/>
                 </div>
-                <div className='w-1/2'>
+                <div className='w-full md:w-1/2'>
                     <h2 className='w-full sm:w-auto text-left font-semibold text-[34px] leading-[44px] sm:text-[40px] sm:leading-[50px] text-charcoal mb-8'>Book and manage your service on the go</h2>
                     <div className='flex gap-6'>
                         <a href="#"><img src="app01.png" alt="" className=""/></a>
@@ -585,7 +588,7 @@ const ProfileTabs = () => {
             </div>
         </div>
         <div 
-            className="absolute left-0 right-0 bottom-0 z-9 min-h-[250px] md:min-h-[450px] overflow-hidden bg-custom-blue" 
+            className="absolute left-0 right-0 bottom-0 z-9 min-h-[350px] md:min-h-[450px] overflow-hidden bg-custom-blue" 
             style={{ backgroundImage: "url('/v2-bg-circle3.svg')", backgroundRepeat: "no-repeat", backgroundPosition: "top center", backgroundSize: "cover" }}
         > 
              
