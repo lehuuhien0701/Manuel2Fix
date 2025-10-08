@@ -9,7 +9,7 @@ const TabButtonQuote = ({ tabs, activeTab, handleTabClick }) => {
   key={tab.id}
   onClick={() => handleTabClick(tab.id)}
   className={`
-    mr-3 font-medium px-6 py-2 text-left rounded-full transition-all
+    mr-3 mb-2 font-medium px-6 py-2 text-left rounded-full transition-all
     ${
       activeTab === tab.id
         ? 'bg-charcoal text-white'
