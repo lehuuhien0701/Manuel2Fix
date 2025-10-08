@@ -7,7 +7,7 @@ const TabButtonQuote = ({ tabs, activeTab, handleTabClick }) => {
       {tabs.map((tab) => (
         <button
   key={tab.id}
-  onClick={() => handleTabClick(tab.id)}
+  onClick={() => handleTabClick(tab.id)} 
   className={`
     mr-3 mb-2 font-medium px-6 py-2 text-left rounded-full transition-all
     ${
