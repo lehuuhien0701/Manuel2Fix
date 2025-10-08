@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const TabButtonQuote = ({ tabs, activeTab, handleTabClick }) => {
   return (
-    <div className='w-full lg:w-[288px] flex flex-col'>
+    <div className='w-full flex flex-col'>
     <div className="mb-10 lg:flex-col overflow-x-auto md:overflow-x-visible">
       {tabs.map((tab) => (
         <button
