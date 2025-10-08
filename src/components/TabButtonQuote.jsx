@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const TabButtonQuote = ({ tabs, activeTab, handleTabClick }) => {
   return (
     <div className='w-full lg:w-[288px] flex flex-col'>
-    <div className="mb-10 lg:flex-col overflow-x-auto whitespace-nowrap md:overflow-x-visible lg:whitespace-nowrap">
+    <div className="mb-10 lg:flex-col overflow-x-auto md:overflow-x-visible">
       {tabs.map((tab) => (
         <button
   key={tab.id}

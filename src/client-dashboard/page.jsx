@@ -1,15 +1,47 @@
 import { useState } from 'react'; 
+import TabContent from '../components/TabContent'; 
+import TabButtons from '../components/TabButtons'; 
+import PersonalInformation from '../components/PersonalInformation';
+import IdentityDocuments from '../components/IdentityDocuments'; 
+import NotificationsGeneralSettings from '../components/NotificationsGeneralSettings'; 
  
 
+
+ 
+
+
+
+
  
 
 
+    const ProfileTabs = () => {
+    
+    // ======================================================
+    // LOGIC TAB MỚI: Quản lý tab đang hoạt động
+    // ======================================================
+    const [activeTab, setActiveTab] = useState('tab1'); // Mặc định là 'tab1'
 
+    // Dữ liệu Tab
+    const tabs = [
+        { id: 'tab1', label: 'Personal information' },
+        { id: 'tab2', label: 'Identity documents' },
+        { id: 'tab3', label: 'Notifications & general settings' }, 
+    ];
 
- 
-const ProfileTabs = () => { 
-
- 
+    // Hàm thay đổi tab
+    const handleTabClick = (tabId) => {
+        setActiveTab(tabId); 
+    }; 
+    
+    // ======================================================
+    // LOGIC CŨ: Quản lý trạng thái Toggle/Accordion
+    // ======================================================
+    const [isOpen, setIsOpen] = useState(false); 
+    const handleToggle = () => {
+        setIsOpen(!isOpen);  
+    };
+    
 
  
   
@@ -239,7 +271,11 @@ const ProfileTabs = () => {
             </div>
 
         </div>
-    </div>    
+    </div>
+
+    
+
+
     <div className='bg-[#F2F7F8]'>
         <div className="mx-auto py-15 sm:py-15 px-6 xl:px-20 container">
             <div className="flex justify-between items-center mb-10">
@@ -327,56 +363,343 @@ const ProfileTabs = () => {
         </div> 
     </div>
 
-
-    <div className='mx-auto py-15 sm:py-15 px-6 xl:px-20 container'>
-        <div className='flex items-center justify-between mb-3'>
-            <h2 className="text-center w-full sm:w-auto sm:text-left font-semibold text-[34px] leading-[44px] sm:text-[40px] sm:leading-[50px] text-charcoal">All ongoing requests</h2>
-            <div className='flex justify-end items-center'>
-                <button className="flex items-center text-charcoal py-[11px] rounded-[6px] font-semibold">
-                    <svg className='mr-6' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 18L9 12L15 6" stroke="#228EA9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    November 2025
-                    <svg className='ml-6' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 18L15 12L9 6" stroke="#228EA9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg> 
-                </button>
-                <button className="bg-primary text-white border border-primary py-[11px] px-9 rounded-[6px] hover:bg-transparent hover:text-teal-600 font-semibold sm:ml-4">Today (13 August 2025)</button>
+    <section>
+        <div className='mx-auto py-15 sm:py-15 px-6 xl:px-20 container'>
+            <div className='flex flex-wrap lg:flex-row items-center justify-between mb-3'>
+                <h2 className="mb-5 lg:mb-0 text-center w-full lg:w-auto lg:text-left font-semibold text-[34px] leading-[44px] lg:text-[40px] lg:leading-[50px] text-charcoal">All ongoing requests</h2>
+                <div className='flex flex-col lg:flex-row justify-center lg:justify-end items-center w-full lg:w-auto'>
+                    <button className="mb-5 lg:mb-0 flex items-center text-charcoal py-[11px] px-6 rounded-[6px] font-semibold bg-white">
+                        <svg className='mr-6' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18L9 12L15 6" stroke="#228EA9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        November 2025
+                        <svg className='ml-6' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="#228EA9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>  
+                    </button>
+                    <button className="bg-primary text-white border border-primary py-[11px] px-6 rounded-[6px] hover:bg-transparent hover:text-teal-600 font-semibold sm:ml-4">Today (13 August 2025)</button>
+                </div>
             </div>
-        </div>
-        <div>
-            <div className='mt-9'>
-                <span className='font-semibold text-base leading-6 text-charcoal'>02 November 2025</span>
-                <div>
-                    <div className='border border-[#D9D9D9] p-6 flex items-center'>
-                        <div className='w-[calc(100%-260px)] flex items-center justify-between'>
-                            <div className='flex items-center'>
-                                <div>
-                                    <img
-                                        src="../client-dashboard-img02.jpg"  
-                                        alt=""
-                                        className="w-[265px] h-[153px] md:w-[151px] md:h-[121px] rounded-xl object-cover"
-                                    />
+            <div className='h-[700px] overflow-y-scroll custom-scrollbar'>
+                <div className='mt-8'>
+                    <span className='font-semibold text-base text-charcoa mb-4 block'>02 November 2025</span> 
+                    <div>
+                        <div className='border border-[#D9D9D9] px-6 py-[23px] rounded-xl mb-4'>
+                            <div className='lg:flex items-center '>
+                                <div className='lg:w-[calc(100%-260px)] md:flex items-center justify-between pb-6 mb-6 lg:pb-0 lg:mb-0 lg:pr-10 border-b lg:border-b-0 lg:border-r border-[#D9D9D9]'>
+                                    <div className='md:flex items-center md:w-[calc(100%-260px)] 2xl:w-auto'>
+                                        <div className='mb-5 md:mb-0'>
+                                            <img
+                                                src="../client-dashboard-img02.jpg"  
+                                                alt=""
+                                                className="w-full h-full md:w-[151px] md:h-[121px] rounded-xl object-cover"
+                                            />
+                                        </div>
+                                        <div className='font-medium text-base text-charcoal md:ml-8 mb-2 md:mb-0'>
+                                            <h3 className='font-semibold text-[22px] leading-8'>Mowing the lawn</h3>
+                                            <p>Client name is over here</p>
+                                        </div>
+                                    </div>
+                                    <div className='flex flex-wrap items-center gap-[16px] md:w-[260px] 2xl:w-auto'> 
+                                        <span className="flex items-center space-x-2 font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-2 rounded-[999px] mr-2 "><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.75 2V6M16.75 2V6M3.75 10H21.75M5.75 4H19.75C20.8546 4 21.75 4.89543 21.75 6V20C21.75 21.1046 20.8546 22 19.75 22H5.75C4.64543 22 3.75 21.1046 3.75 20V6C3.75 4.89543 4.64543 4 5.75 4Z" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>02/11/2025</span></span>
+                                        <span className="flex items-center space-x-2 font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-2 rounded-[999px] mr-2 "><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.75 2H14.75M12.75 14L15.75 11M20.75 14C20.75 18.4183 17.1683 22 12.75 22C8.33172 22 4.75 18.4183 4.75 14C4.75 9.58172 8.33172 6 12.75 6C17.1683 6 20.75 9.58172 20.75 14Z" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>10:00-12:00am (2 hours)</span></span>
+                                    </div>
                                 </div>
-                                <div className='font-medium text-base leading-6 text-charcoal ml-8'>
-                                    <h3 className='font-semibold text-[22px] leading-8'>Mowing the lawn</h3>
-                                    <p>Client name is over here</p>
+                                <div className='lg:w-[260px] lg:pl-10'>
+                                    <button className="w-full bg-transparent text-primary border border-primary py-[11px] px-[26px] rounded-[6px] hover:bg-primary hover:text-white font-semibold">View request details</button>
                                 </div>
                             </div>
-                            <div className='flex items-center gap-[16px]'> 
-                                <span className="flex items-center space-x-2 font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-2 rounded-[999px] mr-2 mb-4"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.75 2V6M16.75 2V6M3.75 10H21.75M5.75 4H19.75C20.8546 4 21.75 4.89543 21.75 6V20C21.75 21.1046 20.8546 22 19.75 22H5.75C4.64543 22 3.75 21.1046 3.75 20V6C3.75 4.89543 4.64543 4 5.75 4Z" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>02/11/2025</span></span>
-                                <span className="flex items-center space-x-2 font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-2 rounded-[999px] mr-2 mb-4"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.75 2H14.75M12.75 14L15.75 11M20.75 14C20.75 18.4183 17.1683 22 12.75 22C8.33172 22 4.75 18.4183 4.75 14C4.75 9.58172 8.33172 6 12.75 6C17.1683 6 20.75 9.58172 20.75 14Z" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>10:00-12:00am (2 hours)</span></span>
+
+
+                            <div className='bg-[#F7F9F9] mt-3 rounded-md'>
+                                <div className='bg-[#F7F9F9] mt-3 rounded-md'> 
+                                   
+                                    <div className='px-6 py-3 flex items-center justify-between cursor-pointer' onClick={handleToggle}>
+                                        <p className='font-semibold text-base text-charcoal'>
+                                            Private chat <span className='font-normal'>(3)</span>
+                                        </p>
+                                        
+                                      
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className={`transition-transform duration-300 ${isOpen ? 'rotate-0' : 'rotate-180'}`} >                                           
+                                            <path d="M18 15L12 9L6 15" stroke="#228EA9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                        </svg> 
+                                    </div>
+                                    
+                                    
+                                    <div className={`transition-all duration-300 overflow-hidden ${isOpen ? 'max-h-screen opacity-100 py-8 border-t border-[#D9D9D9]' : 'max-h-0 opacity-0 py-0'}`} >
+                                        <div className='px-6'> 
+                                            
+                                            <div className="flex items-end space-x-4 mb-6">
+                                                <div className="w-[47px] h-[47px] sm:w-[72px] sm:h-[72px] bg-[#D9D9D9] rounded-full flex-shrink-0"></div>
+                                                <div className="flex-1"> 
+                                                    <div className="bg-white px-4 py-5 rounded-xl shadow-sm max-w-2xl">
+                                                        <div className="flex items-center space-x-2 mb-2 font-poppins font-medium text-base leading-6 text-charcoal">
+                                                            <p className=" ">Name Surname</p>
+                                                            <span className=" ">09:34am</span>
+                                                        </div>
+                                                        <p className="font-poppins font-normal text-base leading-6 text-charcoal">
+                                                            Comment is over here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div className="flex items-end justify-end space-x-4 mb-8">
+                                                <div className="flex-1 flex justify-end">
+                                                    <div className="bg-[#E3EFF2] p-4 rounded-xl shadow-sm max-w-2xl">
+                                                        <div className="flex items-center space-x-2 mb-2 font-poppins font-medium text-base leading-6 text-charcoal">
+                                                            <span className="">09:34am</span>
+                                                        </div> 
+                                                        <p className="font-poppins font-normal text-base leading-6 text-charcoal">
+                                                            Comment is over here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="w-[47px] h-[47px] sm:w-[72px] sm:h-[72px] bg-[#D9D9D9] rounded-full flex-shrink-0"></div>
+                                            </div>
+                                            
+                                            <div className="flex items-end space-x-4">
+                                                <div className="w-[47px] h-[47px] sm:w-[72px] sm:h-[72px] bg-[#D9D9D9] rounded-full flex-shrink-0"></div>
+                                                <div className="flex-1"> 
+                                                    <div className="bg-white p-4 rounded-xl shadow-sm max-w-2xl">
+                                                        <div className="flex items-center space-x-2 mb-2 font-poppins font-medium text-base leading-6 text-charcoal">
+                                                            <p className="">Name Surname</p>
+                                                            <span className="">09:34am</span>
+                                                        </div> 
+                                                        <p className="font-poppins font-normal text-base leading-6 text-charcoal"> 
+                                                            Comment is over here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
+                            
                         </div>
-                        <div className='w-[260px] pl-[62px]'>
-                            <button className="w-full bg-transparent text-primary border border-primary py-[11px] px-[26px] rounded-[6px] hover:bg-primary hover:text-white font-semibold">View request details</button>
+                        <div className='border border-[#D9D9D9] px-6 py-[23px] rounded-xl mb-4'>
+                            <div className='lg:flex items-center '>
+                                <div className='lg:w-[calc(100%-260px)] md:flex items-center justify-between pb-6 mb-6 lg:pb-0 lg:mb-0 lg:pr-10 border-b lg:border-b-0 lg:border-r border-[#D9D9D9]'>
+                                    <div className='md:flex items-center md:w-[calc(100%-260px)] 2xl:w-auto'>
+                                        <div className='mb-5 md:mb-0'>
+                                            <img
+                                                src="../client-dashboard-img02.jpg"  
+                                                alt=""
+                                                className="w-full h-full md:w-[151px] md:h-[121px] rounded-xl object-cover"
+                                            />
+                                        </div>
+                                        <div className='font-medium text-base text-charcoal md:ml-8 mb-2 md:mb-0'>
+                                            <h3 className='font-semibold text-[22px] leading-8'>Mowing the lawn</h3>
+                                            <p>Client name is over here</p>
+                                        </div>
+                                    </div>
+                                    <div className='flex flex-wrap items-center gap-[16px] md:w-[260px] 2xl:w-auto'> 
+                                        <span className="flex items-center space-x-2 font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-2 rounded-[999px] mr-2 "><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.75 2V6M16.75 2V6M3.75 10H21.75M5.75 4H19.75C20.8546 4 21.75 4.89543 21.75 6V20C21.75 21.1046 20.8546 22 19.75 22H5.75C4.64543 22 3.75 21.1046 3.75 20V6C3.75 4.89543 4.64543 4 5.75 4Z" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>02/11/2025</span></span>
+                                        <span className="flex items-center space-x-2 font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-2 rounded-[999px] mr-2 "><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.75 2H14.75M12.75 14L15.75 11M20.75 14C20.75 18.4183 17.1683 22 12.75 22C8.33172 22 4.75 18.4183 4.75 14C4.75 9.58172 8.33172 6 12.75 6C17.1683 6 20.75 9.58172 20.75 14Z" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>10:00-12:00am (2 hours)</span></span>
+                                    </div>
+                                </div>
+                                <div className='lg:w-[260px] lg:pl-10'>
+                                    <button className="w-full bg-transparent text-primary border border-primary py-[11px] px-[26px] rounded-[6px] hover:bg-primary hover:text-white font-semibold">View request details</button>
+                                </div>
+                            </div>
+
+
+                            <div className='bg-[#F7F9F9] mt-3 rounded-md'>
+                                <div className='bg-[#F7F9F9] mt-3 rounded-md'> 
+                                   
+                                    <div className='px-6 py-3 flex items-center justify-between cursor-pointer' onClick={handleToggle}>
+                                        <p className='font-semibold text-base text-charcoal'>
+                                            Private chat <span className='font-normal'>(3)</span>
+                                        </p>
+                                        
+                                      
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className={`transition-transform duration-300 ${isOpen ? 'rotate-0' : 'rotate-180'}`} >                                           
+                                            <path d="M18 15L12 9L6 15" stroke="#228EA9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                        </svg> 
+                                    </div>
+                                    
+                                    
+                                    <div className={`transition-all duration-300 overflow-hidden ${isOpen ? 'max-h-screen opacity-100 py-8 border-t border-[#D9D9D9]' : 'max-h-0 opacity-0 py-0'}`} >
+                                        <div className='px-6'> 
+                                            
+                                            <div className="flex items-end space-x-4 mb-6">
+                                                <div className="w-[47px] h-[47px] sm:w-[72px] sm:h-[72px] bg-[#D9D9D9] rounded-full flex-shrink-0"></div>
+                                                <div className="flex-1"> 
+                                                    <div className="bg-white px-4 py-5 rounded-xl shadow-sm max-w-2xl">
+                                                        <div className="flex items-center space-x-2 mb-2 font-poppins font-medium text-base leading-6 text-charcoal">
+                                                            <p className=" ">Name Surname</p>
+                                                            <span className=" ">09:34am</span>
+                                                        </div>
+                                                        <p className="font-poppins font-normal text-base leading-6 text-charcoal">
+                                                            Comment is over here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div className="flex items-end justify-end space-x-4 mb-8">
+                                                <div className="flex-1 flex justify-end">
+                                                    <div className="bg-[#E3EFF2] p-4 rounded-xl shadow-sm max-w-2xl">
+                                                        <div className="flex items-center space-x-2 mb-2 font-poppins font-medium text-base leading-6 text-charcoal">
+                                                            <span className="">09:34am</span>
+                                                        </div> 
+                                                        <p className="font-poppins font-normal text-base leading-6 text-charcoal">
+                                                            Comment is over here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div className="w-[47px] h-[47px] sm:w-[72px] sm:h-[72px] bg-[#D9D9D9] rounded-full flex-shrink-0"></div>
+                                            </div>
+                                            
+                                            <div className="flex items-end space-x-4">
+                                                <div className="w-[47px] h-[47px] sm:w-[72px] sm:h-[72px] bg-[#D9D9D9] rounded-full flex-shrink-0"></div>
+                                                <div className="flex-1"> 
+                                                    <div className="bg-white p-4 rounded-xl shadow-sm max-w-2xl">
+                                                        <div className="flex items-center space-x-2 mb-2 font-poppins font-medium text-base leading-6 text-charcoal">
+                                                            <p className="">Name Surname</p>
+                                                            <span className="">09:34am</span>
+                                                        </div> 
+                                                        <p className="font-poppins font-normal text-base leading-6 text-charcoal"> 
+                                                            Comment is over here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
+                 
+            </div>
+            
+        </div>
+    </section>
+    <section className='mx-auto py-15 sm:py-20 px-6 xl:px-20 container relative'>
+        <div className="max-w-[709px] m-auto relative z-20">
+            <h2 className="font-semibold text-[40px] leading-[50px] text-center text-charcoal mb-10">Submit support request</h2>
+            
+            {/* Sub-category & Name of Service */}
+            <div className="grid grid-cols-1 gap-10 ">
+                <div>
+                    <label htmlFor="sub-category" className="block font-medium text-base leading-6 text-neutral-700 mb-1">
+                        Reason for the request
+                    </label>
+                    <select 
+                        id="sub-category" 
+                        name="sub-category" 
+                        className="mt-1 block w-full px-4 py-[11.5px] border border-[#D9D9D9] rounded-[6px] focus:outline-none focus:ring-2 focus:ring-custom-blue"
+                    >
+                        <option>Select</option>
+                    </select>
+                </div>
+                <div>
+                <label htmlFor="service-name" className="block font-medium text-base leading-6 text-neutral-700 mb-1">
+                    Message
+                </label> 
+                <textarea
+                className="mt-1 block w-full px-4 py-3 border border-[#D9D9D9] rounded-[6px] focus:outline-none focus:ring-2 focus:ring-custom-blue resize-none"
+                rows="4"  
+                placeholder="Message"
+                ></textarea>
+                </div>
+            </div>
+            
+            {/* Banner Image Upload */}
+            <div className="mb-10 pb-10 border-b border-[#D9D9D9]">
+                <label className="block font-medium text-base leading-6 text-neutral-700 mb-1">
+                Upload photos
+                </label>
+                <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-dashed border-2 border-[#D9D9D9] rounded-xl h-[270px] items-center">
+                <div className="space-y-1 text-center">
+                    <svg className='inline mb-6' width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.6" y="0.6" width="46.8" height="46.8" rx="9" fill="white"/>
+                    <rect x="0.6" y="0.6" width="46.8" height="46.8" rx="9" stroke="#272727" stroke-width="1.2"/>
+                    <path d="M33 27V28.2C33 29.8802 33 30.7202 32.673 31.362C32.3854 31.9265 31.9265 32.3854 31.362 32.673C30.7202 33 29.8802 33 28.2 33H19.8C18.1198 33 17.2798 33 16.638 32.673C16.0735 32.3854 15.6146 31.9265 15.327 31.362C15 30.7202 15 29.8802 15 28.2V27M29 20L24 15M24 15L19 20M24 15V27" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg> 
+                    <div className="md:flex text-sm text-gray-600">
+                    <label htmlFor="file-upload" className="relative cursor-pointer focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-blue-500 font-medium text-base leading-6 text-primary">
+                        <span>Click to upload</span>
+                        <input id="file-upload" name="file-upload" type="file" className="sr-only" />
+                    </label>
+                    <p className="pl-1 font-medium text-base leading-6 text-charcoal">or drag and drop your files here</p>
+                    </div>
+                    <p className="font-normal text-base leading-6 text-charcoal">
+                    PDF, PNG, or JPG (max 100mb)
+                    </p>
+                </div>
+                </div>
+            </div>
+             
+            <div className="text-right">
+                <button 
+                type="submit" 
+                className="w-full sm:w-auto bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-7 rounded-[6px]"
+                >
+                Submit
+                </button>
+            </div>
+        </div> 
+        <div className="absolute bottom-0 md:top-auto md:bottom-0 left-0 z-10">
+            <img 
+                src="/v2-bg-dot3.svg" 
+                alt=""
+                className="w-full h-full"
+            /> 
+        </div>
+    </section>
+    <section className='bg-lightblue'>
+        <div className='mx-auto py-15 sm:py-20 px-6 xl:px-20 container relative'>
+            <h2 className="font-semibold text-[40px] leading-[50px] text-center text-charcoal mb-10">Past conversation with customer support</h2>
+            <div>
+                <div className='bg-white border border-[#D9D9D9] px-6 py-[12px] rounded-xl mb-4'>
+                    <div className='lg:flex items-center '>
+                        <div className='lg:w-[calc(100%-190px)] md:flex items-center justify-between pb-6 mb-6 lg:pb-0 lg:mb-0 lg:pr-10 border-b lg:border-b-0 lg:border-r border-[#D9D9D9]'>
+                            <div className='md:w-[calc(100%-160px)] 2xl:w-auto'> 
+                                <div className='font-medium text-base text-charcoal mb-2 md:mb-0'>
+                                    <h3 className='font-semibold text-[22px] leading-8'>Name of the request is here</h3> 
+                                </div>
+                            </div>
+                            <div className='flex flex-wrap items-center gap-[16px] md:w-[160px] 2xl:w-auto'> 
+                                <span className="flex items-center space-x-2 font-medium text-base text-charcoal bg-[#F2F7F8] px-[10px] py-2 rounded-[999px] mr-2 "><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.75 2V6M16.75 2V6M3.75 10H21.75M5.75 4H19.75C20.8546 4 21.75 4.89543 21.75 6V20C21.75 21.1046 20.8546 22 19.75 22H5.75C4.64543 22 3.75 21.1046 3.75 20V6C3.75 4.89543 4.64543 4 5.75 4Z" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>02/11/2025</span></span>                                
+                            </div>
+                        </div>
+                        <div className='lg:w-[190px] lg:pl-10'>
+                            <button className="w-full bg-transparent text-primary border border-primary py-[11px] px-[26px] rounded-[6px] hover:bg-primary hover:text-white font-semibold">See details</button>
+                        </div>
+                    </div>
+ 
+                </div>
             </div>
         </div>
-        
-    </div>
+    </section>
+    <section className="bg-white py-20 poppins"> 
+      <div className="mx-auto py-15 sm:py-20 px-0 md:px-5 lg:px-10 xl:px-20 container w-full">
+        <div className="flex flex-col md:flex-row gap-10 lg:space-y-0">
+         
+          <div className="w-full md:w-[288px] flex flex-col space-y-4 bg-[#F7F9F9] p-6 rounded-xl">
+               <TabButtons tabs={tabs} activeTab={activeTab} handleTabClick={handleTabClick} />
+          </div>
+
+           
+          <div className="w-full md:w-9/12 bg-white px-6 md:px-0">
+             <TabContent activeTab={activeTab}>
+                {activeTab === 'tab1' && <PersonalInformation />} 
+                {activeTab === 'tab2' && <IdentityDocuments />}
+                {activeTab === 'tab3' && <NotificationsGeneralSettings />}  
+            </TabContent>
+          </div>
+        </div>
+      </div>
+    </section> 
 
 
 </>

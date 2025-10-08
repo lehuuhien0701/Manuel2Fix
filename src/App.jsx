@@ -6,6 +6,9 @@ import Gardening from './gardening/page.jsx';
 import Provider from './provider/page.jsx';
 import Quote from './quote/page.jsx';
 import ClientDashboard from './client-dashboard/page.jsx';
+import ProviderDashboard from './ProviderDashboard/page.jsx';
+
+
 
 
 
@@ -2377,6 +2380,7 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
            <Route path="/provider" element={<Provider />} /> 
            <Route path="/quote" element={<Quote />} />  
            <Route path="/client-dashboard" element={<ClientDashboard />} />  
+           <Route path="/ProviderDashboard" element={<ProviderDashboard />} />  
            
            
            
