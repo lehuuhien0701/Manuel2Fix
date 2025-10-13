@@ -24,6 +24,130 @@ import DatePickerComponent from '../DatePickerComponent.jsx';
   return (
 
 <>
+<section className='relative pb-22'>
+    <div className="w-full mx-auto py-15 pb-5 sm:py-20 sm:pb-0 xl:px-20 container relative z-20">
+        <h2 className='font-semibold text-[45px] leading-[50px] md:text-[65px] md:leading-[78px] text-center text-charcoal mb-[52px]'>
+            Become a service provider
+        </h2>
+        <div className='max-w-[1280px] m-auto shadow-[0px_0px_30px_rgba(0,0,0,0.08)] ] p-10 bg-white'>
+            <div className='mb-8 font-semibold text-[35px] leading-[40px] md:text-[40px] md:leading-[50px] text-charcoal lg:flex justify-between items-center'>
+                <div>
+                    Subscription name is here
+                </div>
+                <div>
+                    100EUR p/m
+                </div>
+            </div>
+            <div className='lg:flex items-center gap-6 pb-6 border-b border-[#D9D9D9]'> 
+                <div className='mb-5 lg:mb-0 lg:w-5/12'>
+                     <ul className='m-0 p-0 font-medium text-base leading-6 text-charcoal'>
+                        <li className='p-4 mb-4 list-none rounded-xl bg-[#FBF8F4] flex items-center gap-4'>
+                            <div className='w-4'>   
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.9042 2.5988L13.5708 0.265469C13.4408 0.135469 13.2308 0.135469 13.1008 0.265469L5.00083 8.36547L2.90417 6.2688C2.77417 6.1388 2.56417 6.1388 2.43417 6.2688L0.0975 8.5988C-0.0325 8.7288 -0.0325 8.9388 0.0975 9.0688L4.76417 13.7355C4.83083 13.8021 4.91417 13.8321 5.00083 13.8321C5.0875 13.8321 5.17083 13.7988 5.2375 13.7355L15.9042 3.07214C16.0342 2.94214 16.0342 2.73214 15.9042 2.60214V2.5988Z" fill="#228EA9"/>
+                            </svg>
+                            </div>
+                            <div className='w-[calc(100%-16px)]'>
+                            Unlimited job applications
+                            </div>
+                        </li>
+                        <li className='p-4 mb-4 list-none rounded-xl bg-[#FBF8F4] flex items-center gap-4'>
+                            <div className='w-4'>   
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.9042 2.5988L13.5708 0.265469C13.4408 0.135469 13.2308 0.135469 13.1008 0.265469L5.00083 8.36547L2.90417 6.2688C2.77417 6.1388 2.56417 6.1388 2.43417 6.2688L0.0975 8.5988C-0.0325 8.7288 -0.0325 8.9388 0.0975 9.0688L4.76417 13.7355C4.83083 13.8021 4.91417 13.8321 5.00083 13.8321C5.0875 13.8321 5.17083 13.7988 5.2375 13.7355L15.9042 3.07214C16.0342 2.94214 16.0342 2.73214 15.9042 2.60214V2.5988Z" fill="#228EA9"/>
+                            </svg>
+                            </div>
+                            <div className='w-[calc(100%-16px)]'>
+                            Higher visibility in client searches
+                            </div>
+                        </li>
+                        <li className='p-4 mb-4 list-none rounded-xl bg-[#FBF8F4] flex items-center gap-4'>
+                            <div className='w-4'>   
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.9042 2.5988L13.5708 0.265469C13.4408 0.135469 13.2308 0.135469 13.1008 0.265469L5.00083 8.36547L2.90417 6.2688C2.77417 6.1388 2.56417 6.1388 2.43417 6.2688L0.0975 8.5988C-0.0325 8.7288 -0.0325 8.9388 0.0975 9.0688L4.76417 13.7355C4.83083 13.8021 4.91417 13.8321 5.00083 13.8321C5.0875 13.8321 5.17083 13.7988 5.2375 13.7355L15.9042 3.07214C16.0342 2.94214 16.0342 2.73214 15.9042 2.60214V2.5988Z" fill="#228EA9"/>
+                            </svg>
+                            </div>
+                            <div className='w-[calc(100%-16px)]'>
+                            Access to private job invitations
+                            </div>
+                        </li>
+                        <li className='p-4 mb-4 list-none rounded-xl bg-[#FBF8F4] flex items-center gap-4'>
+                            <div className='w-4'>   
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.9042 2.5988L13.5708 0.265469C13.4408 0.135469 13.2308 0.135469 13.1008 0.265469L5.00083 8.36547L2.90417 6.2688C2.77417 6.1388 2.56417 6.1388 2.43417 6.2688L0.0975 8.5988C-0.0325 8.7288 -0.0325 8.9388 0.0975 9.0688L4.76417 13.7355C4.83083 13.8021 4.91417 13.8321 5.00083 13.8321C5.0875 13.8321 5.17083 13.7988 5.2375 13.7355L15.9042 3.07214C16.0342 2.94214 16.0342 2.73214 15.9042 2.60214V2.5988Z" fill="#228EA9"/>
+                            </svg>
+                            </div>
+                            <div className='w-[calc(100%-16px)]'>
+                            Priority customer support
+                            </div>
+                        </li>
+                        <li className='p-4 list-none rounded-xl bg-[#FBF8F4] flex items-center gap-4'>
+                            <div className='w-4'>   
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.9042 2.5988L13.5708 0.265469C13.4408 0.135469 13.2308 0.135469 13.1008 0.265469L5.00083 8.36547L2.90417 6.2688C2.77417 6.1388 2.56417 6.1388 2.43417 6.2688L0.0975 8.5988C-0.0325 8.7288 -0.0325 8.9388 0.0975 9.0688L4.76417 13.7355C4.83083 13.8021 4.91417 13.8321 5.00083 13.8321C5.0875 13.8321 5.17083 13.7988 5.2375 13.7355L15.9042 3.07214C16.0342 2.94214 16.0342 2.73214 15.9042 2.60214V2.5988Z" fill="#228EA9"/>
+                            </svg>
+                            </div>
+                            <div className='w-[calc(100%-16px)]'>
+                            Cancel anytime
+                            </div>
+                        </li>
+                     </ul>   
+                </div>
+                <div className='lg:w-7/12'>
+                   <img src="img30.jpg" alt="" className="w-full object-cover rounded-lg"/>
+                </div>
+            </div>
+            <div className='pt-4 pb-4 mb-8 border-b border-[#D9D9D9] md:flex items-center justify-between font-medium text-base leading-6 text-charcoal'>
+                <div className='mb-5 md:mb-0'>
+                    This plan will auto renew every 30 days
+                </div>
+                <div>
+                    <div className='flex items-center'>
+                    <input
+                        type="checkbox"  
+                        id="disable"
+                        name="gender"  
+                        className="peer2 hidden" 
+                        
+                    />
+                    
+                
+                    <label 
+                        htmlFor="disable" 
+                        className="custom-checkbox-button2 mr-[10px] relative flex items-center justify-center flex-shrink-0"
+                    > 
+                        <svg 
+                            className="absolute h-4 w-4 text-white opacity-0 transition-opacity duration-200" 
+                            fill="none" 
+                            stroke="currentColor" 
+                            viewBox="0 0 24 24" 
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                    </label>
+                    
+                    
+                    <label htmlFor="disable" className="font-medium text-base text-charcoal cursor-pointer select-none">
+                    Disable auto-renewal
+                    </label>
+                </div>
+                </div>
+            </div>
+            <button className="hidden md:block bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-8 rounded-[6px]">Subscribe now</button>
+
+        </div>
+    </div>
+
+    <div 
+        className="min-h-[600px] absolute z-10 left-0 right-0 bottom-0 overflow-hidden bg-custom-blue" 
+        style={{ backgroundImage: "url('/banner02-s.svg')", backgroundRepeat: "no-repeat", backgroundPosition: "top center", backgroundSize: "cover" }}
+    > 
+    
+    </div>
+
+
+</section>
     <section>
         <div className=''>    
             <div className='relative'>
