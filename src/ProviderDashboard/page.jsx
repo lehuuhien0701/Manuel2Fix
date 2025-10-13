@@ -38,7 +38,7 @@ import DatePickerComponent from '../DatePickerComponent.jsx';
                     100EUR p/m
                 </div>
             </div>
-            <div className='lg:flex items-center gap-6 pb-6 border-b border-[#D9D9D9]'> 
+            <div className='lg:flex items-center gap-6 pb-5 border-b border-[#D9D9D9]'> 
                 <div className='mb-5 lg:mb-0 lg:w-5/12'>
                      <ul className='m-0 p-0 font-medium text-base leading-6 text-charcoal'>
                         <li className='p-4 mb-4 list-none rounded-xl bg-[#FBF8F4] flex items-center gap-4'>
@@ -94,10 +94,10 @@ import DatePickerComponent from '../DatePickerComponent.jsx';
                      </ul>   
                 </div>
                 <div className='lg:w-7/12'>
-                   <img src="img30.jpg" alt="" className="w-full object-cover rounded-lg"/>
+                   <img src="img30.jpg" alt="" className="w-full h-[344px] object-cover rounded-lg"/>
                 </div>
             </div>
-            <div className='pt-4 pb-4 mb-8 border-b border-[#D9D9D9] md:flex items-center justify-between font-medium text-base leading-6 text-charcoal'>
+            <div className='pt-5 pb-5 mb-8 border-b border-[#D9D9D9] md:flex items-center justify-between font-medium text-base leading-6 text-charcoal'>
                 <div className='mb-5 md:mb-0'>
                     This plan will auto renew every 30 days
                 </div>
