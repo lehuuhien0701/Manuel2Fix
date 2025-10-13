@@ -27,7 +27,7 @@ import DatePickerComponent from '../DatePickerComponent.jsx';
     <section>
         <div className=''>    
             <div className='relative'>
-                <div className="w-full mx-auto py-15 pb-5 sm:py-20 sm:pb-0 container relative">
+                <div className="w-full mx-auto py-15 pb-5 sm:py-20 sm:pb-0 xl:px-20 container relative">
                     <div className="xl:flex flex-col xl:flex-row justify-between lg:gap-20">
                     
                         <div className="w-full xl:w-5/12 relative z-40 md:pr-9 lg:pr-0 pt-4">
@@ -103,7 +103,7 @@ import DatePickerComponent from '../DatePickerComponent.jsx';
                 
             </div>
             <div className="bg-[#F2F7F8]">
-                <article className="mx-auto py-15 sm:py-20 container"> 
+                <article className="mx-auto py-15 sm:py-20 container xl:px-20">  
                     <div className="flex justify-between items-center mb-10">
                         <h2 className="text-center w-full md:w-auto sm:text-left font-semibold text-[34px] leading-[44px] sm:text-[40px] sm:leading-[50px] text-charcoal">Why people trust Manual2Fix</h2> 
                         <button className="hidden md:block bg-primary hover:bg-charcoal text-white font-semibold text-[16px] py-3 px-8 rounded-[6px]"> 
@@ -142,7 +142,7 @@ import DatePickerComponent from '../DatePickerComponent.jsx';
         
     </section>
     <section>
-        <div className='w-full mx-auto py-15 sm:py-20 container relative'>
+        <div className='w-full mx-auto py-15 sm:py-20 xl:px-20 container relative'> 
             <div className='max-w-[840px] m-auto'>
                 <h2 className='font-semibold text-[34px] leading-[44px] sm:text-[40px] sm:leading-[50px] text-center text-charcoal'>Latest notifications</h2>
                 <div className='mt-10 border-t border-[#D9D9D9]'>
@@ -168,7 +168,7 @@ import DatePickerComponent from '../DatePickerComponent.jsx';
         </div>
     </section>
     <section className=''>
-        <div className='mx-auto py-15 sm:py-15 px-6 xl:px-20 container'>
+        <div className='mx-auto py-15 sm:py-15 px-6 xl:px-20 container'> 
             <div className='flex flex-wrap lg:flex-row items-center justify-between mb-3'>
                 <h2 className="mb-5 lg:mb-0 text-center w-full lg:w-auto lg:text-left font-semibold text-[34px] leading-[44px] lg:text-[40px] lg:leading-[50px] text-charcoal">All ongoing requests</h2>
                 <div className='w-full lg:w-auto lg:flex items-center'>
@@ -494,7 +494,7 @@ import DatePickerComponent from '../DatePickerComponent.jsx';
         <div className='mx-auto py-15 sm:py-15 px-6 xl:px-20 container'>
             <div className='flex flex-wrap lg:flex-row items-center justify-between mb-10'>
                 <h2 className="mb-5 lg:mb-0 text-center w-full lg:w-auto lg:text-left font-semibold text-[34px] leading-[44px] lg:text-[40px] lg:leading-[50px] text-charcoal">Set up availability</h2>
-                <div className='flex items-center'>
+                <div className='flex items-center w-full lg:w-auto'>
                     <div className='flex flex-col lg:flex-row justify-center lg:justify-end items-center w-full lg:w-auto'>
                         <button className="mb-5 lg:mb-0 flex items-center text-charcoal py-[11px] rounded-[6px] font-semibold bg-white">
                             <svg className='mr-6' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -825,7 +825,7 @@ import DatePickerComponent from '../DatePickerComponent.jsx';
         </div>
     </section>  
     <section>
-        <div className="w-full mx-auto py-15 sm:py-20 container relative">
+        <div className="w-full mx-auto py-15 sm:py-20 xl:px-20 container relative">
             <h2 className='font-semibold text-[34px] leading-[44px] sm:text-[40px] sm:leading-[50px] text-charcoal text-center mb-10'>New jobs</h2>
             <div className='lg:flex gap-8'>
                 <div className='lg:w-[437px] h-[750px] overflow-y-scroll'>
@@ -876,7 +876,7 @@ import DatePickerComponent from '../DatePickerComponent.jsx';
         </div>
     </section>  
     <section className="bg-[#F1EDE6] relative overflow-hidden">
-        <article className="mx-auto py-15 sm:py-20 container">
+        <article className="mx-auto py-15 sm:py-20 container xl:px-20">
         
         <div className="flex justify-between items-center mb-10">
             <h2 className="text-center w-full font-semibold text-[34px] leading-[44px] sm:text-[40px] sm:leading-[50px] text-charcoal">Client reviews</h2>                       
@@ -1093,7 +1093,7 @@ import DatePickerComponent from '../DatePickerComponent.jsx';
         </article>
     </section>
     <section className="bg-white relative shadow-[0px_0px_30px_rgba(0,0,0,0.08)]">        
-        <article className="mx-auto py-15 sm:py-20 container">
+        <article className="mx-auto py-15 sm:py-20 container xl:px-20">
             <h2 className='text-center w-full font-semibold text-[34px] leading-[44px] sm:text-[40px] sm:leading-[50px] text-charcoal mb-10'>Bank transfer</h2>
             <div>
                 <h3 className='font-semibold text-[22px] leading-8 text-charcoal'>Account details</h3>
@@ -1200,7 +1200,7 @@ import DatePickerComponent from '../DatePickerComponent.jsx';
         </article>
     </section>     
     <section className="bg-[#FBF8F4]">        
-        <article className="mx-auto py-15 sm:py-20 container">
+        <article className="mx-auto py-15 sm:py-20 container xl:px-20 ">
             <h2 className='text-center w-full font-semibold text-[34px] leading-[44px] sm:text-[40px] sm:leading-[50px] text-charcoal mb-10'>Transaction history</h2>
             <div>
                 <div className='md:flex items-center justify-between py-4 md:py-[14px] px-5 md:px-3 mb-3 bg-[#F1EDE6] rounded-md'>

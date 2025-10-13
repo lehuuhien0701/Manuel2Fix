@@ -4,6 +4,9 @@ import TabButtons from '../components/TabButtons';
 import PersonalInformation from '../components/PersonalInformation';
 import IdentityDocuments from '../components/IdentityDocuments'; 
 import NotificationsGeneralSettings from '../components/NotificationsGeneralSettings'; 
+import ProAccount from '../components/ProAccount'; 
+import Subscription from '../components/Subscription';  
+ 
  
 
 
@@ -27,6 +30,8 @@ import NotificationsGeneralSettings from '../components/NotificationsGeneralSett
         { id: 'tab1', label: 'Personal information' },
         { id: 'tab2', label: 'Identity documents' },
         { id: 'tab3', label: 'Notifications & general settings' }, 
+        { id: 'tab4', label: 'Pro account' }, 
+        { id: 'tab5', label: 'Subscription' }, 
     ];
 
     // Hàm thay đổi tab
@@ -695,6 +700,8 @@ import NotificationsGeneralSettings from '../components/NotificationsGeneralSett
                 {activeTab === 'tab1' && <PersonalInformation />} 
                 {activeTab === 'tab2' && <IdentityDocuments />}
                 {activeTab === 'tab3' && <NotificationsGeneralSettings />}  
+                {activeTab === 'tab4' && <ProAccount />}  
+                {activeTab === 'tab5' && <Subscription />}  
             </TabContent>
           </div>
         </div>
